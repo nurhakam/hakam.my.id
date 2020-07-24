@@ -3,28 +3,26 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Lists from '../components/Lists'
+import SEO from '../components/SEO'
 import config from '../utils/config'
 
-export default function TagTemplate({ data, pageContext }) {
-  const { tag } = pageContext
-  const tagPosts = data.allMarkdownRemark.edges // from the graphql query below
+export default function Index({ data }) {
+  const posts = data.allMarkdownRemark.edges // from the graphql query below
   return (
     <Layout>
-      <div className="tag-container">
-        <Helmet title={`Posts tagged as "${tag}" - ${config.siteTitle}`} />
-        <Lists posts={tagPosts} />
-      </div>
+      <Helmet title={`Articles – ${config.siteTitle}`} />
+      <SEO />
+      <Lists posts={posts} />
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query TagPage($tag: String) {
+  query BlogQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { template: { eq: "post" } } }
     ) {
-      totalCount
       edges {
         node {
           id

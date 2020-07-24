@@ -1,176 +1,118 @@
-const urljoin = require("url-join");
-const path = require("path");
-const config = require("./data/SiteConfig");
-
 module.exports = {
-  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
-    rssMetadata: {
-      site_url: urljoin(config.siteUrl, config.pathPrefix),
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
-      title: config.siteTitle,
-      description: config.siteDescription,
-      image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
-      )}/logos/logo-512.png`,
-      copyright: config.copyright
-    }
+    title: 'Hakam.',
+    author:{
+      name: 'Syaiful Nur Hakam'
+    },
+    pathPrefix: '/',
+    siteUrl: 'https://hakam.my.id',
+    description:
+      'Full stack human. Doing my best to become better human',
+    feedUrl: 'https://hakam.my.id/rss.xml',
+    logo: 'https://hakam.my.id/logo.png',
   },
+
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-lodash",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-styled-components',
+
+    // Image and static
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "assets",
-        path: `${__dirname}/static/`
-      }
+        name: 'assets',
+        path: `${__dirname}/static/`,
+      },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "posts",
-        path: `${__dirname}/content/`
-      }
+        name: 'posts',
+        path: `${__dirname}/content/`,
+      },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+
+    // Markdown
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`
-          },
-          {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 690
+              classPrefix: 'language-',
             }
           },
-          {
-            resolve: "gatsby-remark-responsive-iframe"
-          },
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers",
-          "gatsby-remark-prismjs"
-        ]
-      }
+          'gatsby-remark-autolink-headers',
+          'gatsby-remark-prismjs',
+        ],
+      },
     },
+
+    // Meta
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        trackingId: config.googleAnalyticsID
-      }
+        name: 'Hakam.',
+        short_name: 'Hakam.',
+        description:
+          'Full stack human. Doing my best to become better human',
+        start_url: '/',
+        background_color: 'white',
+        theme_color: '#5183f5',
+        display: 'minimal-ui',
+        icon: 'static/logo.png',
+      },
     },
+
+    // Feed
     {
-      resolve: "gatsby-plugin-nprogress",
+      resolve: 'gatsby-plugin-feed',
       options: {
-        color: config.themeColor
-      }
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-twitter",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: "minimal-ui",
-        icons: [
-          {
-            src: "/logos/logo-192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "/logos/logo-512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
-    },
-    "gatsby-plugin-offline",
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: path.resolve("src/netlifycms/index.js"), // default: undefined
-        enableIdentityWidget: true,
-        publicPath: "admin",
-        htmlTitle: "Content Manager",
-        includeRobots: false
-      }
-    },
-    {
-      resolve: "gatsby-plugin-feed",
-      options: {
-        setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Advanced Starter";
-          return ret;
-        },
         query: `
-        {
-          site {
-            siteMetadata {
-              rssMetadata {
-                site_url
-                feed_url
+          {
+            site {
+              siteMetadata {
                 title
                 description
-                image_url
-                copyright
-              }
+                siteUrl
+                site_url: siteUrl
             }
           }
         }
       `,
         feeds: [
           {
-            serialize(ctx) {
-              const { rssMetadata } = ctx.query.site.siteMetadata;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
-                categories: edge.node.frontmatter.tags,
-                date: edge.node.fields.date,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [
-                  { "content:encoded": edge.node.html },
-                  { author: config.userEmail }
-                ]
-              }));
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
+                return { ...edge.node.frontmatter, categories: edge.node.frontmatter.tags,
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],}
+              })
             },
             query: `
             {
               allMarkdownRemark(
-                limit: 1000,
-                sort: { order: DESC, fields: [fields___date] },
+                sort: { order: DESC, fields: [frontmatter___date] },
+                filter: { frontmatter: { template: { eq: "post" } } }
               ) {
                 edges {
                   node {
                     excerpt
                     html
-                    timeToRead
                     fields {
                       slug
-                      date
                     }
                     frontmatter {
                       title
-                      cover
                       date
-                      category
                       tags
                     }
                   }
@@ -178,11 +120,12 @@ module.exports = {
               }
             }
           `,
-            output: config.siteRss,
-            title: config.siteRssTitle
-          }
-        ]
-      }
-    }
-  ]
-};
+            output: '/rss.xml',
+            title: 'Hakam. | RSS Feed',
+          },
+        ],
+      },
+    },
+  
+  ],
+}

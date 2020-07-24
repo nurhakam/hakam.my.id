@@ -1,69 +1,81 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
-import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
-import SEO from "../components/SEO/SEO";
-import Footer from "../components/Footer/Footer";
-import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
-import "./post.css";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
+import Layout from '../components/Layout'
+import PostTags from '../components/PostTags'
+import SEO from '../components/SEO'
+import config from '../utils/config'
 
-export default class PostTemplate extends React.Component {
-  render() {
-    const { data, pageContext } = this.props;
-    const { slug } = pageContext;
-    const postNode = data.markdownRemark;
-    const post = postNode.frontmatter;
-    if (!post.id) {
-      post.id = slug;
-    }
+import '../new-moon.css'
 
-    return (
-      <Layout>
-        <div>
-          <Helmet>
-            <title>{`${post.title} | ${config.siteTitle}`}</title>
-          </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
-            <h1>{post.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            <div className="post-meta">
-              <PostTags tags={post.tags} />
-              <SocialLinks postPath={slug} postNode={postNode} />
-            </div>
-            <UserInfo config={config} />
-            <Disqus postNode={postNode} />
-            <Footer config={config} />
-          </div>
-        </div>
-      </Layout>
-    );
+const ArticleContainer = styled.section`
+  padding: 0 1.5rem;
+
+  // border: 1px dashed;
+
+  @media only screen and (min-width: 600px) {
+    max-width: 700px;
+    margin: auto;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      text-decoration: none
+    }
+  }
+`
+
+const ArticleHeader = styled.div`
+  // border: 1px dashed;
+  padding 2rem 0;
+`
+
+const H1 = styled.h1`
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+
+  // border: 1px dashed;
+`
+
+const Article = styled.article`
+  // border: 1px dashed;
+`
+
+export default function PostTemplate({ data }) {
+  const post = data.markdownRemark // from the graphql query below
+
+  return (
+    <Layout>
+      <Helmet title={`${post.frontmatter.title} - ${config.siteTitle}`} />
+      <SEO postPath={post.fields.slug} postNode={post} postSEO />
+      <ArticleContainer>
+        <ArticleHeader>
+          <H1>{`~ ${post.frontmatter.title} ~`}</H1>
+          <PostTags tags={post.frontmatter.tags} />
+        </ArticleHeader>
+        <Article dangerouslySetInnerHTML={{ __html: post.html }} />
+      </ArticleContainer>
+    </Layout>
+  )
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
-      excerpt
       frontmatter {
         title
         cover
-        date
+        date(formatString: "MMMM DD, YYYY")
         category
         tags
       }
       fields {
         slug
-        date
       }
     }
   }
-`;
+`
