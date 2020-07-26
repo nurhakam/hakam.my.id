@@ -4,13 +4,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Lists from '../components/Lists'
 import SEO from '../components/SEO'
-import config from '../utils/config'
 
 export default function Index({ data }) {
-  const posts = data.allMarkdownRemark.edges // from the graphql query below
+  const posts = data.posts.edges // from the graphql query below
+  const siteTitle = data.site.siteMetadata.title // from the graphql query below
+
   return (
     <Layout>
-      <Helmet title={`Articles – ${config.siteTitle}`} />
+      <Helmet title={`Articles – ${siteTitle}`} />
       <SEO />
       <Lists posts={posts} />
     </Layout>
@@ -19,19 +20,25 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query BlogQuery {
-    allMarkdownRemark(
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    posts : allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { template: { eq: "post" } } }
     ) {
       edges {
         node {
+          excerpt(pruneLength: 300)
           id
           fields {
             slug
           }
           frontmatter {
             title
-            date(formatString: "DD/MM/YYYY")
+            date(formatString: "DD MMM YYYY")
           }
         }
       }

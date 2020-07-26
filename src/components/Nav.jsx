@@ -2,106 +2,79 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const NavBar = styled.nav`
-  background: #fff;
-  border-top: 3px #ffd644 solid;
-  height: 50px;
+const Nav = styled.nav`
+ border-top: 4px solid #ffd644;
+ background: #f7f7f7;
+
+ @media only screen and (min-width: 865px) {
+  background: none;
+ }
+`
+
+const NavBar = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
 
   @media only screen and (min-width: 600px) {
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    background: #f7f7f7;
-    padding: 0 1rem;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 865px) {
     padding: 0 2rem;
-  }
-`
-
-const NavLeft = styled.div`
-  padding: .5rem;
-
-  @media only screen and (min-width: 600px) {
-    display: flex;
-    align-items: center;
-  }
-`
-
-const NavRight = styled.div`
-  display: none;
-
-  @media only screen and (min-width: 600px) {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    height: 100%;
+    padding-top: 3rem;
   }
 `
 
 const Title = styled(Link)`
-  color: #2c3242;
+  display: inline-flex;
+  align-items: center;
   font-size: 1.1rem;
-  font-weight: 600;
-  border-bottom: none;
-  padding-left: .5rem;
+  margin: 1rem 0;
 
   &:hover {
     border-bottom: none;
   }
 
-  .emoji {
-    margin: 0 .5rem 0 .1rem;
-  }
-
-  @media only screen and (min-width: 600px) {
-    padding-left: 0;
+  span {
+    padding-right: 1rem;
+    font-size: 1.5rem;
   }
 `
 
-const Description = styled.span`
-  display: none;
+const NavRight = styled.div`
+  display: inline-flex;
 
-  @media only screen and (min-width: 768px) {
-    display: block;
-    margin-left: 1rem;
-    font-size: 0.9rem;
-  }
-`
+  a {
+  padding: .9rem 1rem;
+  color: #5f777d;
 
-const NavItem = styled(Link)`
-  @media only screen and (min-width: 600px) {
-    display: block;
-    padding: .9rem 1rem;
-    font-weight: 400;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: .075rem;
-    color: #5f777d;
-
-    &:hover,
-    &:active {
+  &:hover,
+  &:active {
     background: #eee;
     border-bottom: none;
-    }
+  }
   }
 `
 
 export default function Header() {
   return (
-    <NavBar>
-      <NavLeft>
-        <Title to="/">
-          <span role="img" aria-label="apple" className="emoji">🍏</span>
-          Nur Hakam.
+    <Nav>
+      <NavBar>
+        <Title to="/" title="Hakam - Full Stack Human">
+          <span role="img" aria-label="apple">🍏</span>
+          Hakam - Full Stack Human
         </Title>
-        <Description>Full Stack Human</Description>
-      </NavLeft>
-      <NavRight>
-        <NavItem to="/blog">Articles</NavItem>
-        <NavItem to="/notes">Notes</NavItem>
-        <NavItem to="/now">Now</NavItem>
-      </NavRight>
-    </NavBar>
+        <NavRight>
+          <Link to="/blog">Articles</Link>
+          <Link to="/notes">Notes</Link>
+          <Link to="/now">About</Link>
+        </NavRight>
+      </NavBar>
+    </Nav>
   )
 }

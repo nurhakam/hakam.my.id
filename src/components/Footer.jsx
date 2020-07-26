@@ -5,25 +5,24 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
   color: black;
   padding: 0 1.5rem;
+  background: #f7f7f7;
+  border-top: 4px solid #ffd644;
 `
 
 const FooterItem = styled.a`
+  display: inline-block;
   padding: 1rem;
   color: #5f777d;
       
   &:hover,
   &:active {
-    border-bottom: none;
     background: #eee;
   }
 `
 
 const CreditContainer = styled.div`
-  padding-top: 1rem;
-  
   p {
     text-align: center;
   }
@@ -43,7 +42,7 @@ export default function Footer() {
         </FooterItem>
         <FooterItem
           href="https://instagram.com/syaifulnurh"
-          title="See Instagram profile"
+          title="See my Instagram profile"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -64,7 +63,7 @@ export default function Footer() {
           {" "}
           <a
             href="https://www.gatsbyjs.org"
-            title="Hire me at Linkedin"
+            title="Gatsby"
             target="_blank"
             rel="noopener noreferrer"
           >

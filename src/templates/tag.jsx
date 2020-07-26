@@ -27,13 +27,14 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt(pruneLength: 300)
           id
           fields {
             slug
           }
           frontmatter {
             title
-            date(formatString: "DD/MM/YYYY")
+            date(formatString: "DD MMM YYYY")
           }
         }
       }
