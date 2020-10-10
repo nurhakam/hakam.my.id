@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
-import PostTags from '../components/PostTags'
+import Tags from '../components/Tags'
 import SEO from '../components/SEO'
 import config from '../utils/config'
 
@@ -25,17 +25,34 @@ const ArticleContainer = styled.section`
 `
 
 const ArticleHeader = styled.div`
-  padding 2rem 0;
+  padding: 1.5rem 0;
+
+  @media only screen and (min-width: 600px) {
+    padding-top: 3rem
+  }
 `
 
 const H1 = styled.h1`
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.1;
+  letter-spacing: -1.2px;
   text-align: center;
+  margin-top: 0;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.8rem;
+  }
 `
 
-const Article = styled.article`
- 
+const PostInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  time {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #888;
+  }
 `
 
 export default function PostTemplate({ data }) {
@@ -48,9 +65,15 @@ export default function PostTemplate({ data }) {
       <ArticleContainer>
         <ArticleHeader>
           <H1>{`${post.frontmatter.title}`}</H1>
-          <PostTags tags={post.frontmatter.tags} />
+          <PostInfo>
+            <Tags tags={post.frontmatter.tags} />
+            <time>
+              {"📅 "}
+              {post.frontmatter.date}
+            </time>
+          </PostInfo>
         </ArticleHeader>
-        <Article dangerouslySetInnerHTML={{ __html: post.html }} />
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
       </ArticleContainer>
     </Layout>
   )
@@ -64,7 +87,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMM DD, YYYY")
         category
         tags
       }

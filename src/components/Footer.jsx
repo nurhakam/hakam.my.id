@@ -59,17 +59,12 @@ export default function Footer() {
       </div>
       <CreditContainer>
         <p>
-          Design & Code © 2020 Hakam. | Built with
+          Design, code, and written with ❤ | 
+          © 2020
           {" "}
-          <a
-            href="https://www.gatsbyjs.org"
-            title="Gatsby"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
+          <a href="/" title="Hakam.">
+            Hakam.
           </a>
-          .
         </p>
       </CreditContainer>
     </FooterContainer>

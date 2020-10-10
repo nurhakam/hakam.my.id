@@ -3,7 +3,7 @@
 :root {
   --font-color: #495057;
   --heading-color: #343a40;
-  --dark-font-color: #1b1d25;
+  --dark-font-color: #202223;
   --medium-font-color: #60656c;
   --light-font-color: #868e96;
   --light-background: #f1f3f5;
@@ -21,7 +21,7 @@ html {
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: var(--font-color);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -36,7 +36,6 @@ ul,
 dl,
 table,
 blockquote {
-  font-size: 1.125rem;
   margin: 0 0 1.5rem 0;
 }
 
@@ -173,4 +172,19 @@ td {
 
 tbody tr:nth-child(even) {
   background-color: var(--light-background);
+}
+
+.cdcover {
+  margin: 0 auto;
+  display: block;
+  max-width: 400px;
+  padding-bottom: 1rem;
+}
+
+.cdcover > span > a {
+  background: none
+}
+
+.cdcover > span > a > img {
+  border-radius: .4rem;
 }

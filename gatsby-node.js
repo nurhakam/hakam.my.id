@@ -121,7 +121,7 @@ const createNode = ({ node, actions, getNode }) => {
     if (Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')) {
       slug = `/${node.frontmatter.slug}/`
     } else {
-      slug = `/${parsedFilePath.dir}/`
+      slug = `/${parsedFilePath.name}/`
     }
 
     createNodeField({

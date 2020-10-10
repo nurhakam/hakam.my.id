@@ -9,16 +9,15 @@ const TagContainer = styled.div`
 `
 
 const Tag = styled(Link)`
-  font-size: .9rem;
+  font-size: .85rem;
   padding: .1rem .5rem;
-  border: 1px solid;
-  border-radius: .3rem;
-  margin: .1rem .25rem;
+  border-radius: .5rem;
+  margin-right: .3rem;
+  background: #f2f2f2;
+  color: #333;
 
   &:hover {
-    border: 1px solid var(--link-color);
-    background: var(--link-color);
-    color: white;
+    background: #cecece;
   }
 `
 
@@ -34,7 +33,7 @@ export function slugify(string) {
   )
 }
 
-export default function PostTags(props) {
+export default function Tags(props) {
   const { tags } = props;
   return (
     <TagContainer>
@@ -44,7 +43,7 @@ export default function PostTags(props) {
             key={tag}
             to={`/tags/${slugify(tag)}`}
           >
-            {`#${tag}`}
+            {`${tag}`}
           </Tag>
       ))}
     </TagContainer>

@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 
 const Container = styled.div`
-  max-width: 800px;
+  max-width: 700px;
   padding: 1.5rem;
   margin: auto;
 `

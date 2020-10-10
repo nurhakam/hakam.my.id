@@ -14,7 +14,7 @@ const Nav = styled.nav`
 const NavBar = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 1rem 1.5rem;
 
   @media only screen and (min-width: 600px) {
     flex-direction: row;
@@ -34,30 +34,40 @@ const Title = styled(Link)`
   display: inline-flex;
   align-items: center;
   font-size: 1.1rem;
-  margin: 1rem 0;
+  letter-spacing: -1.2px;
+  margin: 0.5rem 0;
 
   &:hover {
     border-bottom: none;
   }
 
-  span {
+  span.logo {
     padding-right: 1rem;
-    font-size: 1.5rem;
+  }
+
+  span.title {
   }
 `
 
 const NavRight = styled.div`
   display: inline-flex;
+  margin: 0.5rem 0;
 
   a {
-  padding: .9rem 1rem;
+  padding: .5rem .9rem;
   color: #5f777d;
+  margin-right: .5rem;
 
   &:hover,
-  &:active {
+  &.active {
     background: #eee;
     border-bottom: none;
+    border-radius: .5rem;
   }
+  }
+
+  @media only screen and (min-width: 600px) {
+    margin-left: 0;
   }
 `
 
@@ -66,13 +76,13 @@ export default function Header() {
     <Nav>
       <NavBar>
         <Title to="/" title="Hakam - Full Stack Human">
-          <span role="img" aria-label="apple">🍏</span>
-          Hakam - Full Stack Human
+          <span className="logo" role="img" aria-label="apple">🍏</span>
+          <span className="title">Hakam - Full Stack Human</span>
         </Title>
         <NavRight>
-          <Link to="/blog">Articles</Link>
-          <Link to="/notes">Notes</Link>
-          <Link to="/now">About</Link>
+          <Link to="/blog" activeClassName="active">Articles</Link>
+          <Link to="/#" activeClassName="active">Notes</Link>
+          <Link to="/now" activeClassName="active">About</Link>
         </NavRight>
       </NavBar>
     </Nav>
