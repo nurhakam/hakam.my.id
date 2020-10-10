@@ -51,7 +51,7 @@ const PostInfo = styled.div`
   time {
     font-size: 0.85rem;
     font-weight: 700;
-    color: #888;
+    color: #4e595b;
   }
 `
 
