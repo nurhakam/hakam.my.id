@@ -28,7 +28,7 @@ Lirik lagu **Sora no Emerald** oleh **22/7** (*Nanabun no Nijyuuni*) terjemahan 
 - Single : 5th Single - ムズイ (*Muzui* / Sulit)
 - Realese Date : *2020.02.26*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 Berapa kali aku harus bertemu jalan buntu?<br>
 Dimanakah jalan kita sebenarnya?<br>
 Aku melihat mimpiku berada disana<br>
@@ -44,7 +44,7 @@ Sekilas itu kusebut harapan, seperti hari ini<br>
 Sesuatu sedang datang<br>
 <br>
 
-### Kanji
+## Kanji
 何度目の行き止まりを引き返せばいい<br>
 僕たちの道はどこにあるのだろう<br>
 すぐそこに見えてたはずの自分の夢が<br>
@@ -60,7 +60,7 @@ Sesuatu sedang datang<br>
 It’s coming<br>
 <br>
 
-### Romaji
+## Romaji
 Nandome no ikidomari o hikikaese ba ī<br>
 Bokutachi no michi wa doko ni aru no darō<br>
 Sugu soko ni mieteta hazu no jibun no yume ga<br>

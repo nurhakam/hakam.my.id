@@ -28,7 +28,7 @@ Lirik lagu **Muzui** oleh **22/7** (*Nanabun no Nijyuuni*) terjemahan Bahasa Ind
 - Single : 5th Single - ムズイ (*Muzui* / Sulit)
 - Realese Date : *2020.02.26*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 "Orang dewasa dengan mudah mengatakannya<br>
 Tetapi bagi diriku, dimanakah harapan itu berada?"<br>
 <br>
@@ -53,7 +53,7 @@ Karena hidup itu begitu panjang<br>
 "Hidup itu sulit"<br>
 <br>
 
-### Kanji
+## Kanji
 「大人たちは簡単に言うけど<br>
 私にとっての希望ってどこにあるの？」<br>
 <br>
@@ -78,7 +78,7 @@ Karena hidup itu begitu panjang<br>
 「ムズイよ」<br>
 <br>
 
-### Romaji
+## Romaji
 “otonatachi wa kantan ni iu kedo<br>
 watashi ni totte no kibou tte doko ni aru no?”<br>
 <br>

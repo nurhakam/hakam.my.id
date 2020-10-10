@@ -20,7 +20,7 @@ Lirik lagu **Aoi Remon** oleh **STU48** terjemahan Bahasa Indonesia. *Aoi remon*
 - Single : 3rd Single - 大好きな人 (*Daisuki na Hito* / Orang yang Aku Cintai)
 - Realese Date : *2019.07.31*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 "Aku menyukai buah lemon yang belum matang<br>
 Sudah berapa banyak yang kumakan sejak aku lahir?"<br>
 <br>
@@ -64,7 +64,7 @@ Dan diriku dipenuhi rasa bahagia<br>
 Rasanya asam dan pahit, itulah kehidupan!"<br>
 <br>
 
-### Kanji
+## Kanji
 「熟していない青い檸檬が僕は好きだ<br>
 生まれてから僕はもう何個　齧っただろう？」<br>
 <br>
@@ -107,7 +107,7 @@ Rasanya asam dan pahit, itulah kehidupan!"<br>
 酸っぱさも苦さも人生なんだ」<br>
 <br>
 
-### Romaji
+## Romaji
 "juku shite inai aoi remon ga boku wa suki da<br>
 umarete kara boku wa mou nan ko    kajitta darou?"<br>
 <br>

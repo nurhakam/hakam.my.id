@@ -25,7 +25,7 @@ Lirik lagu **Koko ni Iru Riyuu** oleh **Nogizaka46** terjemahan Bahasa Indonesia
 	- Single : *2014.07.09*
 	- Album  : *2018.01.10*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 Tutup pipa drainase<br>
 Yang sedikit terbuka<br>
 Dan hujan yang belum akan mereda<br>
@@ -67,7 +67,7 @@ Kita tidak punya alasan lagi untuk bersama<br>
 Kita berdua mengetauinya, dan masih saja...<br>
 <br>
 
-### Kanji
+## Kanji
 排水溝の蓋(ふた)が<br>
 少しだけずれていた<br>
 まだ止まないその雨が<br>
@@ -109,7 +109,7 @@ Kita berdua mengetauinya, dan masih saja...<br>
 お互い　わかってるのに…<br>
 <br>
 
-### Romaji
+## Romaji
 haisuikou no futa ga<br>
 ukoshi dake zurete ita<br>
 mada yamanai sono ame ga<br>

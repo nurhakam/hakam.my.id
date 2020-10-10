@@ -19,7 +19,7 @@ Lirik lagu **Juuichinin ga Atsumatta Riyuu** oleh **22/7** (*Nanabun no Nijyuuni
 - Single : 1st Single - 僕は存在していなかった (*Boku wa Sonzai Shiteinakatta* / Meskipun Keberadaanku Tak Ada)
 - Realese Date : *2017.09.20*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 Sejak kapan kita sudah bersama?<br>
 Awalnya kita semua tak saling mengenal<br>
 Dengan canggungnya selalu melihat kebawah<br>
@@ -61,7 +61,7 @@ Akhirnya, kita bisa bertemu<br>
 Kita mengambil langkah kedepan<br>
 <br>
 
-### Kanji
+## Kanji
 いつのまに　集まったんだ？<br>
 会ったことない誰かたち<br>
 ぎこちなく俯(うつむ)いている<br>
@@ -103,7 +103,7 @@ Kita mengambil langkah kedepan<br>
 僕らは歩き出す<br>
 <br>
 
-### Romaji
+## Romaji
 Itsunomani atsumatta nda?<br>
 atta koto nai dareka tachi<br>
 gikochinaku utsumu ite iru<br>

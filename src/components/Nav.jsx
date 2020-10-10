@@ -55,7 +55,7 @@ const NavRight = styled.div`
 
   a {
   padding: .5rem .9rem;
-  color: #5f777d;
+  color: #4e595b;
   margin-right: .5rem;
 
   &:hover,

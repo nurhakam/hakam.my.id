@@ -15,11 +15,11 @@ const FooterItem = styled.a`
   display: inline-block;
   padding: .5rem .9rem;
   margin: .5rem 0;
-  color: #5f777d;
+  color: #4e595b;
       
   &:hover{
     background: #eee;
-    color: #5f777d;
+    color: #4e595b;
     border-bottom: none;
     border-radius: .5rem;
   }

@@ -23,7 +23,7 @@ Lirik lagu **Sonna Koto Nai yo** oleh **Hinatazaka46** terjemahan Bahasa Indones
 - Single : 4th Single - ソンナコトナイヨ (*Sonna Koto Nai yo* / Itu Tidak Benar)
 - Realese Date : *2020.02.19*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 Angin musim semi tiba-tiba berhembus<br>
 Menyingkap lembut tirai jendela<br>
 Kau terlihat sedang tidak sehat<br>
@@ -74,7 +74,7 @@ Aku menyukaimu, jangan pernah pergi<br>
 Aku menyukaimu karena kamu adalah dirimu<br>
 <br>
 
-### Kanji
+## Kanji
 春の風が　不意に吹いて<br>
 窓のカーテンを膨らませた<br>
 まるで君が　拗ねた時の<br>
@@ -125,7 +125,7 @@ Aku menyukaimu karena kamu adalah dirimu<br>
 君だから君だからこんなに好きなんだ<br>
 <br>
 
-### Romaji
+## Romaji
 Haru no kaze ga fui ni fui te<br>
 Mado no kaaten wo fukurama seta<br>
 Marude kimi ga suneta toki no<br>

@@ -22,7 +22,7 @@ Lirik lagu **Cage** oleh **Hinatazaka46** terjemahan Bahasa Indonesia. *Cage* ad
 - Single : 2nd Single - ドレミソラシド (*Doremisolasido*)
 - Realese Date : *2019.07.17*
 
-### Bahasa Indonesia
+## Bahasa Indonesia
 Aku berharap langit menghilang dari dunia ini<br>
 Jika itu terjadi,<br>
 Aku tak akan iri dengan burung yang sedang bergegas kesana<br>
@@ -105,7 +105,7 @@ Wow...<br>
 Wow...<br>
 <br>
 
-### Kanji
+## Kanji
 世界から 空がなくなってしまえばいいと思った<br>
 そうしたら 僕はもうあの空を駆け巡る鳥たちを羨むことはないんだ<br>
 空を飛んだってしょうがない<br>
@@ -171,7 +171,7 @@ Wow…<br>
 Wow…<br>
 <br>
 
-### Romaji
+## Romaji
 sekai kara sora ga nakunatte shimaeba ii to omotta<br>
 sou shitara boku wa mou ano sora wo kakemeguru toritachi wo urayamu koto wa nain da<br>
 sora wo tondatte shou ga nai<br>
