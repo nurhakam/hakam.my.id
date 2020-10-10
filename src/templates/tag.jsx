@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Lists from '../components/Lists'
+import SEO from '../components/SEO'
 import config from '../utils/config'
 
 export default function TagTemplate({ data, pageContext }) {
@@ -12,6 +13,7 @@ export default function TagTemplate({ data, pageContext }) {
     <Layout>
       <div className="tag-container">
         <Helmet title={`Posts tagged as "${tag}" - ${config.siteTitle}`} />
+        <SEO />
         <Lists posts={tagPosts} />
       </div>
     </Layout>

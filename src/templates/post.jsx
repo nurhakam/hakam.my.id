@@ -88,6 +88,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMM DD, YYYY")
         tags
+        thumbnail {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
       fields {
         slug

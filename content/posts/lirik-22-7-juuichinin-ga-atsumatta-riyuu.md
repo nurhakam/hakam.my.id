@@ -2,6 +2,7 @@
 title: "Lirik 22/7 - Juuichinin ga Atsumatta Riyuu (Alasan Sebelas dari Kita Bersama)"
 date: "2020-01-12"
 template: "post"
+thumbnail : ../images/22-7-1st-single-type-a.jpg
 tags:
     - "Lirik"
     - "22/7"

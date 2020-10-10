@@ -2,6 +2,7 @@
 title: "Lirik 22/7 - Muzui (Sulit)"
 date: "2020-01-26"
 template: "post"
+thumbnail : ../images/22-7-5th-single-type-a.jpg
 tags:
     - "Lirik"
     - "22/7"

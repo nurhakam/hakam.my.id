@@ -2,6 +2,7 @@
 title: "Lirik Hinatazaka46 - Cage (Sangkar)"
 date: "2020-01-14"
 template: "post"
+thumbnail : ../images/hinatazaka46-2nd-single-doremisolasido.jpg
 tags:
     - "Lirik"
     - "Hinatazaka46"

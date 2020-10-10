@@ -2,7 +2,6 @@
 date: 2020-05-27
 title: 'Draft Satu'
 template: post
-cover: '8.jpg'
 slug: "draft"
 tags:
     - draft

@@ -2,6 +2,7 @@
 title: "Lirik 22/7 - Sora no Emerald (Langit Emerald)"
 date: "2020-01-26"
 template: "post"
+thumbnail : ../images/22-7-5th-single-type-b.jpg
 tags:
     - "Lirik"
     - "22/7"

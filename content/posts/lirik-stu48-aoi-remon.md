@@ -2,6 +2,7 @@
 title: "Lirik STU48 - Aoi Remon (Lemon Hijau)"
 date: "2020-01-09"
 template: "post"
+thumbnail : ../images/stu-3rd-single-theater-edition.jpg
 tags:
     - "Lirik"
     - "STU48"

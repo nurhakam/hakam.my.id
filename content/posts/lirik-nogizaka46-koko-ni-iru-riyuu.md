@@ -2,6 +2,7 @@
 title: "Lirik Nogizaka46 - Koko ni Iru Riyuu (Alasan Untuk Berada Disini)"
 date: "2020-01-17"
 template: "post"
+thumbnail : ../images/nogizaka46-9th-single-type-c.jpg
 tags:
     - "Lirik"
     - "Nogizaka46"

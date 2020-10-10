@@ -2,6 +2,7 @@
 title: "Lirik Hinatazaka46 - Sonna Koto Nai yo (Itu Tidak Benar)"
 date: "2020-01-24"
 template: "post"
+thumbnail : ../images/hinatazaka46-4th-single-type-a.jpg
 tags:
     - "Lirik"
     - "Hinatazaka46"
