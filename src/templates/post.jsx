@@ -86,7 +86,6 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
-        cover
         date(formatString: "MMM DD, YYYY")
         tags
       }
