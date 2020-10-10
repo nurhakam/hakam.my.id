@@ -17,7 +17,7 @@ export default function SEO({
   if (postSEO) {
     const postMeta = postNode.frontmatter
     title = postMeta.title
-    description = postNode.excerpt
+    description = postMeta.description || postNode.excerpt
 
     if (postMeta.thumbnail) {
       image = postMeta.thumbnail.childImageSharp.fixed.src
@@ -74,6 +74,7 @@ export default function SEO({
   }
   return (
     <Helmet>
+      <html lang="en" />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
 
