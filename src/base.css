@@ -21,8 +21,14 @@ html {
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: var(--font-color);
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 1.1rem;
+  }
 }
 
 body {

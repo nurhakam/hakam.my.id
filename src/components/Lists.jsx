@@ -15,10 +15,14 @@ const PostsEach = styled.div`
   border-bottom: 1px solid #e6e6e6;
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     letter-spacing: -2px;
     margin: 0;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 1.8rem;
+    }
   }
 
   p {
