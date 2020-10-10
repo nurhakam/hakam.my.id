@@ -88,7 +88,6 @@ export const pageQuery = graphql`
         title
         cover
         date(formatString: "MMM DD, YYYY")
-        category
         tags
       }
       fields {
