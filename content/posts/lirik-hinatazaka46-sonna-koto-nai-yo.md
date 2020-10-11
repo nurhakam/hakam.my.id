@@ -26,52 +26,52 @@ Lirik lagu **Sonna Koto Nai yo** oleh **Hinatazaka46** terjemahan Bahasa Indones
 ## Bahasa Indonesia
 Angin musim semi tiba-tiba berhembus<br>
 Menyingkap lembut tirai jendela<br>
-Kau terlihat sedang tidak sehat<br>
-Terlihat jelas dari pipimu<br>
+Seolah-olah kau sedang tidak sehat<br>
+Terlihat dari pipimu<br>
 <br>
 Bekas rambut poni yang kau potong masih tampak<br>
-Seseorang mengatakan kepadaku kenapa kau terlihat sedih<br>
+Seseorang mengatakan kepadaku kenapa kau tampak sedih<br>
 <br>
 Itu tidak benar, aku tidak berpikir demikian<br>
 Bagaimanapun dirimu, aku tetap menyukaimu<br>
 Itu tidak benar, aku ingin memelukmu<br>
 Kau adalah orang paling cantik di kelas<br>
-Lihatlah dirimu di depan cermin dengan baik, itu terlihat cocok denganmu<br>
-Bukankah gadis dipantulan cermin itu tampak sangat menawan<br>
+Lihatlah dirimu di cermin dengan baik, bukankah sangat cocok<br>
+Bukankah gadis dipantulannya tampak sangat menawan<br>
 <br>
 Itu tidak benar!<br>
 <br>
-Suasana berhias sinar matahari dan bayangannya<br>
-Lampu di lorong kelas yang menyala<br>
-Berkedip setiap satu detik<br>
-Perasaan khas masa muda<br>
+Sinar matahari dan bayangannya<br>
+Membentuk petak cahaya di lantai kelas<br>
+Berubah pola setiap satu detik<br>
+Perasaan khas remaja<br>
 <br>
 Aku tahu aku seperti anak kecil<br>
-Ibuku memberitahuku, aku akan segera tumbuh dewasa<br>
+Ibuku memberitahu, pasti rambutku akan tumbuh panjang lagi<br>
 <br>
 Jangan khawatir, aku tidak membencinya<br>
-Dimana hal yang tidak kau suka itu<br>
+Dimana hal yang tidak kau suka<br>
 Jangan khawatir, kau selalu tampak menyilaukan<br>
-Aku menyadari diriku menyukai orang terbaik di dunia<br>
-Ada banyak gadis cantik lain tetapi aku tidak menginginkan selain dirimu<br>
+Aku sadar diriku menyukai orang terbaik di dunia<br>
+Ada banyak gadis cantik lain, tetapi aku tidak ingin selain dirimu<br>
 Lihatlah gadis yang ada di pantulan cermin itu dengan baik<br>
 <br>
 Aku sudah lama menyukaimu<br>
-Tidak peduli bagaimanapun dirimu<br>
+Apapun yang kau lakukan, takkan merubahnya<br>
 <br>
 Itu tidak benar, aku tidak berpikir demikian<br>
 Bagaimanapun dirimu, aku tetap menyukaimu<br>
 Itu tidak benar, aku ingin memelukmu<br>
 Kau adalah orang paling cantik di kelas<br>
-Lihatlah dirimu di depan cermin dengan baik, itu terlihat cocok denganmu<br>
-Bukankah gadis dipantulan cermin itu tampak sangat menawan<br>
+Lihatlah dirimu di cermin dengan baik, bukankah sangat cocok<br>
+Bukankah gadis dipantulannya tampak sangat menawan<br>
 <br>
-Kau adalah tipe yang dapat berteman dengan siapapun<br>
-Aku menyukaimu, jangan pernah pergi<br>
-Hanya dirimu saja, bukan orang lain<br>
-Kau adalah tipe yang dapat berteman dengan siapapun<br>
-Aku menyukaimu, jangan pernah pergi<br>
-Aku menyukaimu karena kamu adalah dirimu<br>
+Jika di suatu tempat ada tipe sepertimu<br>
+Aku takkan menyukaimu seperti ini<br>
+Ya, hanya dirimu saja, bukan orang lain<br>
+Jika di suatu tempat ada tipe sepertimu<br>
+Aku takkan menyukaimu seperti ini<br>
+Aku sangat mencintaimu karena kamu adalah dirimu<br>
 <br>
 
 ## Kanji
