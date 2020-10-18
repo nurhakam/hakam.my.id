@@ -8,7 +8,7 @@ import config from '../utils/config'
 
 export default function TagTemplate({ data, pageContext }) {
   const { tag } = pageContext
-  const tagPosts = data.allMarkdownRemark.edges // from the graphql query below
+  const tagPosts = data.allMdx.edges // from the graphql query below
   return (
     <Layout>
       <div className="tag-container">
@@ -22,7 +22,7 @@ export default function TagTemplate({ data, pageContext }) {
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {

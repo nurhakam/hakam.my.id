@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
@@ -38,7 +39,7 @@ const Article = styled.article`
 `
 
 export default function PageTemplate({ data }) {
-  const post = data.markdownRemark // from the graphql query below
+  const post = data.mdx // from the graphql query below
 
   return (
     <Layout>
@@ -48,7 +49,7 @@ export default function PageTemplate({ data }) {
         <ArticleHeader>
           <H1>{post.frontmatter.title}</H1>
         </ArticleHeader>
-        <Article dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXRenderer>{post.body}</MDXRenderer>
       </ArticleContainer>
     </Layout>
   )
@@ -56,8 +57,8 @@ export default function PageTemplate({ data }) {
 
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         title
       }

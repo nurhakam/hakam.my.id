@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
@@ -56,7 +57,7 @@ const PostInfo = styled.div`
 `
 
 export default function PostTemplate({ data }) {
-  const post = data.markdownRemark // from the graphql query below
+  const post = data.mdx // from the graphql query below
 
   return (
     <Layout>
@@ -73,7 +74,7 @@ export default function PostTemplate({ data }) {
             </time>
           </PostInfo>
         </ArticleHeader>
-        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXRenderer>{post.body}</MDXRenderer>
       </ArticleContainer>
     </Layout>
   )
@@ -81,8 +82,8 @@ export default function PostTemplate({ data }) {
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       excerpt(pruneLength: 180)
       frontmatter {
         title

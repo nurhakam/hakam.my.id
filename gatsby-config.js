@@ -29,37 +29,25 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/content/posts`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: `${__dirname}/content/pages`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/content/images`,
+        path: `${__dirname}/content/`,
       },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-remark-images',
 
     // Markdown
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
           },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
         ],
+        extensions: [`.md`, `.mdx`],
       },
     },
 
@@ -97,26 +85,26 @@ module.exports = {
       `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map((edge) => {
                 return { ...edge.node.frontmatter, categories: edge.node.frontmatter.tags,
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],}
+                  custom_elements: [{ 'content:encoded': edge.node.body }],}
               })
             },
             query: `
             {
-              allMarkdownRemark(
+              allMdx(
                 sort: { order: DESC, fields: [frontmatter___date] },
                 filter: { frontmatter: { template: { eq: "post" } } }
               ) {
                 edges {
                   node {
                     excerpt
-                    html
+                    body
                     fields {
                       slug
                     }

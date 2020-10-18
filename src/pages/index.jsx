@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -20,7 +21,7 @@ export default function Index({ data }) {
       <Helmet title={`${siteTitle} – Full Stack Human`} />
       <SEO />
       <Container>
-        <article dangerouslySetInnerHTML={{ __html: home.html }} />
+        <MDXRenderer>{home.body}</MDXRenderer>
       </Container>
     </Layout>
   )
@@ -33,12 +34,12 @@ export const pageQuery = graphql`
         title
       }
     }
-    home : allMarkdownRemark(
+    home : allMdx(
       filter: { fileAbsolutePath: { regex: "/home/" } }
     ) {
       edges {
         node {
-          html
+          body
         }
       }
     }

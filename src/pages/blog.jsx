@@ -25,7 +25,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    posts : allMarkdownRemark(
+    posts : allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { template: { eq: "post" } } }
     ) {
