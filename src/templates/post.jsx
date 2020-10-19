@@ -1,14 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import styled from 'styled-components'
-import Layout from '../components/Layout'
-import Tags from '../components/Tags'
-import SEO from '../components/SEO'
-import config from '../utils/config'
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import styled from "styled-components";
+import Layout from "../components/Layout";
+import Tags from "../components/Tags";
+import SEO from "../components/SEO";
+import config from "../utils/config";
 
-import '../new-moon.css'
+import "../new-moon.css";
 
 const ArticleContainer = styled.section`
   padding: 0 1.5rem;
@@ -18,20 +18,25 @@ const ArticleContainer = styled.section`
     margin: auto;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     a {
-      text-decoration: none
+      text-decoration: none;
     }
   }
-`
+`;
 
 const ArticleHeader = styled.div`
   padding: 1.5rem 0;
 
   @media only screen and (min-width: 600px) {
-    padding-top: 3rem
+    padding-top: 3rem;
   }
-`
+`;
 
 const H1 = styled.h1`
   font-size: 1.7rem;
@@ -43,7 +48,7 @@ const H1 = styled.h1`
   @media only screen and (min-width: 600px) {
     font-size: 1.8rem;
   }
-`
+`;
 
 const PostInfo = styled.div`
   display: flex;
@@ -54,10 +59,10 @@ const PostInfo = styled.div`
     font-weight: 700;
     color: #4e595b;
   }
-`
+`;
 
 export default function PostTemplate({ data }) {
-  const post = data.mdx // from the graphql query below
+  const post = data.mdx; // from the graphql query below
 
   return (
     <Layout>
@@ -77,7 +82,7 @@ export default function PostTemplate({ data }) {
         <MDXRenderer>{post.body}</MDXRenderer>
       </ArticleContainer>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -102,4 +107,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

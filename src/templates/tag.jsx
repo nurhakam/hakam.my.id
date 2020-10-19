@@ -1,14 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Lists from '../components/Lists'
-import SEO from '../components/SEO'
-import config from '../utils/config'
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Lists from "../components/Lists";
+import SEO from "../components/SEO";
+import config from "../utils/config";
 
 export default function TagTemplate({ data, pageContext }) {
-  const { tag } = pageContext
-  const tagPosts = data.allMdx.edges // from the graphql query below
+  const { tag } = pageContext;
+  const tagPosts = data.allMdx.edges; // from the graphql query below
   return (
     <Layout>
       <div className="tag-container">
@@ -17,7 +17,7 @@ export default function TagTemplate({ data, pageContext }) {
         <Lists posts={tagPosts} />
       </div>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -43,4 +43,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

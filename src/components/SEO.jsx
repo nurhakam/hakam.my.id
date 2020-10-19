@@ -1,7 +1,7 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react";
+import Helmet from "react-helmet";
 
-import config from '../utils/config'
+import config from "../utils/config";
 
 export default function SEO({
   postNode,
@@ -9,48 +9,48 @@ export default function SEO({
   postSEO,
   customDescription,
 }) {
-  let title
-  let description
-  let image = config.siteLogo
-  let postURL
+  let title;
+  let description;
+  let image = config.siteLogo;
+  let postURL;
 
   if (postSEO) {
-    const postMeta = postNode.frontmatter
-    title = postMeta.title
-    description = postMeta.description || postNode.excerpt
+    const postMeta = postNode.frontmatter;
+    title = postMeta.title;
+    description = postMeta.description || postNode.excerpt;
 
     if (postMeta.thumbnail) {
-      image = postMeta.thumbnail.childImageSharp.fixed.src
+      image = postMeta.thumbnail.childImageSharp.fixed.src;
     }
 
-    postURL = `${config.siteUrl}${postPath}`
+    postURL = `${config.siteUrl}${postPath}`;
   } else {
-    title = config.siteTitle
-    description = customDescription || config.description
+    title = config.siteTitle;
+    description = customDescription || config.description;
   }
 
-  image = `${config.siteUrl}${image}`
+  image = `${config.siteUrl}${image}`;
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      "@context": "http://schema.org",
+      "@type": "WebSite",
       url: config.siteUrl,
       name: title,
       alternateName: title,
     },
-  ]
+  ];
 
   if (postSEO) {
     schemaOrgJSONLD.push(
       {
-        '@context': 'http://schema.org',
-        '@type': 'BreadcrumbList',
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
         itemListElement: [
           {
-            '@type': 'ListItem',
+            "@type": "ListItem",
             position: 1,
             item: {
-              '@id': postURL,
+              "@id": postURL,
               name: title,
               image,
             },
@@ -58,19 +58,19 @@ export default function SEO({
         ],
       },
       {
-        '@context': 'http://schema.org',
-        '@type': 'BlogPosting',
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
         url: config.siteUrl,
         name: title,
         alternateName: title,
         headline: title,
         image: {
-          '@type': 'ImageObject',
+          "@type": "ImageObject",
           url: image,
         },
         description,
       }
-    )
+    );
   }
   return (
     <Helmet>
@@ -94,5 +94,5 @@ export default function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
     </Helmet>
-  )
+  );
 }

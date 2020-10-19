@@ -1,25 +1,25 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const TagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-`
+`;
 
 const Tag = styled(Link)`
-  font-size: .85rem;
-  padding: .1rem .5rem;
-  border-radius: .5rem;
-  margin-right: .3rem;
+  font-size: 0.85rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.3rem;
   background: #f2f2f2;
   color: #333;
 
   &:hover {
     background: #cecece;
   }
-`
+`;
 
 export function slugify(string) {
   return (
@@ -29,8 +29,8 @@ export function slugify(string) {
         /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
       )
       .map((x) => x.toLowerCase())
-      .join('-')
-  )
+      .join("-")
+  );
 }
 
 export default function Tags(props) {
@@ -38,14 +38,11 @@ export default function Tags(props) {
   return (
     <TagContainer>
       {tags &&
-        tags.map(tag => (
-          <Tag
-            key={tag}
-            to={`/tags/${slugify(tag)}`}
-          >
+        tags.map((tag) => (
+          <Tag key={tag} to={`/tags/${slugify(tag)}`}>
             {`${tag}`}
           </Tag>
-      ))}
+        ))}
     </TagContainer>
   );
 }

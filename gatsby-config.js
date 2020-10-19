@@ -1,51 +1,50 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hakam.',
-    author:{
-      name: 'Syaiful Nur Hakam'
+    title: "Hakam.",
+    author: {
+      name: "Syaiful Nur Hakam",
     },
-    pathPrefix: '/',
-    siteUrl: 'https://hakam.my.id',
-    description:
-      'Full stack human. Doing my best to become better human',
-    feedUrl: 'https://hakam.my.id/rss.xml',
-    logo: 'https://hakam.my.id/logo.png',
+    pathPrefix: "/",
+    siteUrl: "https://hakam.my.id",
+    description: "Full stack human. Doing my best to become better human",
+    feedUrl: "https://hakam.my.id/rss.xml",
+    logo: "https://hakam.my.id/logo.png",
   },
 
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-styled-components',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-styled-components",
 
     // Image and static
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'assets',
+        name: "assets",
         path: `${__dirname}/static/`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'posts',
+        name: "posts",
         path: `${__dirname}/content/`,
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-remark-images',
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-remark-images",
 
     // Markdown
     {
-      resolve: 'gatsby-plugin-mdx',
+      resolve: "gatsby-plugin-mdx",
       options: {
         gatsbyRemarkPlugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
           },
-          'gatsby-remark-autolink-headers',
-          'gatsby-remark-prismjs',
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-prismjs",
         ],
         extensions: [`.md`, `.mdx`],
       },
@@ -53,23 +52,22 @@ module.exports = {
 
     // Meta
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'Hakam.',
-        short_name: 'Hakam.',
-        description:
-          'Full stack human. Doing my best to become better human',
-        start_url: '/',
-        background_color: 'white',
-        theme_color: '#5183f5',
-        display: 'minimal-ui',
-        icon: 'static/logo.png',
+        name: "Hakam.",
+        short_name: "Hakam.",
+        description: "Full stack human. Doing my best to become better human",
+        start_url: "/",
+        background_color: "white",
+        theme_color: "#5183f5",
+        display: "minimal-ui",
+        icon: "static/logo.png",
       },
     },
 
     // Feed
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: "gatsby-plugin-feed",
       options: {
         query: `
           {
@@ -87,13 +85,16 @@ module.exports = {
           {
             serialize: ({ query: { site, allMdx } }) => {
               return allMdx.edges.map((edge) => {
-                return { ...edge.node.frontmatter, categories: edge.node.frontmatter.tags,
+                return {
+                  ...edge.node.frontmatter,
+                  categories: edge.node.frontmatter.tags,
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.body }],}
-              })
+                  custom_elements: [{ "content:encoded": edge.node.body }],
+                };
+              });
             },
             query: `
             {
@@ -118,12 +119,11 @@ module.exports = {
               }
             }
           `,
-            output: '/rss.xml',
-            title: 'Hakam. | RSS Feed',
+            output: "/rss.xml",
+            title: "Hakam. | RSS Feed",
           },
         ],
       },
     },
-  
   ],
-}
+};

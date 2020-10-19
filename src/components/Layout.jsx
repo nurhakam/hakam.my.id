@@ -1,8 +1,8 @@
-import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
+import React from "react";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
-import '../base.css'
+import "../base.css";
 
 export default function Layout({ children }) {
   return (
@@ -11,5 +11,5 @@ export default function Layout({ children }) {
       <main id="main-content">{children}</main>
       <Footer />
     </>
-  )
+  );
 }

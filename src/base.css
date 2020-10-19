@@ -16,9 +16,9 @@
 /* Scaffolding */
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto',
-    Roboto, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto",
+    Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: var(--font-color);
   font-weight: 400;
   font-size: 1rem;
@@ -145,6 +145,22 @@ div > a:hover {
   background: none;
 }
 
+.anchor.before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  padding-right: 4px;
+}
+
+h2 .anchor svg {
+  visibility: hidden;
+}
+
+h2:hover .anchor svg {
+  visibility: visible;
+}
+
 /* Tables */
 
 table {
@@ -188,9 +204,9 @@ tbody tr:nth-child(even) {
 }
 
 .cdcover > span > a {
-  background: none
+  background: none;
 }
 
 .cdcover > span > a > img {
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }

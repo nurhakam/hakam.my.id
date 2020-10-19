@@ -12,17 +12,14 @@ If you like something you read here, please feel free to share it and let me kno
 
 ### Some Personal Favorites
 
-* [Time when human is lost and discovered it again accidentally](/#)
-* 🌱 [We are part of the environment](/#)
-* [Life Plan A and B](/#)
-* [Absurdity, Zen, and Stoic](/#)
-* [Being Storyteller, a blessed way to life](/#)
-
+- [Time when human is lost and discovered it again accidentally](/#)
+- 🌱 [We are part of the environment](/#)
+- [Life Plan A and B](/#)
+- [Absurdity, Zen, and Stoic](/#)
+- [Being Storyteller, a blessed way to life](/#)
 
 ### Philosophy
 
-* ⭐️ [Citadel: a place where our Utopia hiding](/#)
-* [The True Goal - Embodiment of philosophy](/#)
-* [God is dead, what Nietsze said](/#)
-
-
+- ⭐️ [Citadel: a place where our Utopia hiding](/#)
+- [The True Goal - Embodiment of philosophy](/#)
+- [God is dead, what Nietsze said](/#)
