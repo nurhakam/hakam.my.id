@@ -89,7 +89,7 @@ export default function Header() {
             Notes
           </Link>
           <Link to="/now" activeClassName="active">
-            About
+            What&apos;s up?
           </Link>
         </NavRight>
       </NavBar>

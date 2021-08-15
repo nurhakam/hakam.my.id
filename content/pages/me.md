@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: What's happening?
 slug: now
 cover: 8.jpg
 template: page
@@ -7,7 +7,7 @@ template: page
 
 Hey there! My name is Hakam. This site is my personal blog. Sometimes I will post some of my thoughts here and I hope you enjoy reading it.
 
-I am a student, I seek anything to learn and experience, in a world that isn't centered around, far-far away from my own corner, to the other, the unknown. What for? to find myself.
+I am an undergraduate student, I seek anything to learn and experience, in a world that isn't centered around, far-far away from my own corner, to the other, the unknown. What for? to find myself.
 
 ## Goals & Interests
 

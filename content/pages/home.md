@@ -1,14 +1,14 @@
 Hi there 👋
 
-My name is Syaiful Nur Hakam. I'm a student, passionate learner, and a future chemist. I update this [now](/now) page regularly and write a glimpse about what I'm currently doing in there.
+My name is Syaiful Nur Hakam. I'm an undergraduate student and passionate learner. I update the [now](/now) page regularly and write a glimpse about what I'm currently up to in there.
 
-This is my personal site where I drop notes and articles about things that I am interested in. Generally speaking this journal will capture thought I have about learning web development, languange, philosophy, writting, and my endless curiosity with science especially chemistry.
+This site is my personal space (some sort of digital garden) where I drop draft, notes, and article in things I'm interested in. Mostly, it will capture thoughts I have about learning foreign language, philosophy, writing, web development, and my endless curiosity with Japanese culture.
 
-The entries on this page aren't all complete thoughts. It's a space for me to post what I like and I try not to hoard drafts like some sort of digital Smog. Instead I choose to just let things fly and circle back to them later if I feel like it.
+I found the idea of a blog without a publish button interesting. A concept to write entries that aren't all complete thoughts and open to edit or add things later on. In a sense, each entry become living being that capture how the thought is evolving over time.
 
-If you'd like to get in touch with me [email](mailto:hakam_@merahputih.id) are your best channels.
+If you'd like to get in touch with me, [email](mailto:say.hi@hakam.my.id) are your best channels.
 
-If you like something you read here, please feel free to share it and let me know. It's always nice to get feedback.
+Please feel free to share it and let me know if you like something you read here. It's always nice to get feedback.
 
 ### Some Personal Favorites
 
