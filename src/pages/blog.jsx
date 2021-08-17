@@ -11,7 +11,7 @@ export default function Index({ data }) {
 
   return (
     <Layout>
-      <Helmet title={`Articles – ${siteTitle}`} />
+      <Helmet title={`Articles | ${siteTitle}`} />
       <SEO />
       <Lists posts={posts} />
     </Layout>

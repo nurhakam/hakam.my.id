@@ -62,10 +62,9 @@ export default function Footer() {
       </div>
       <CreditContainer>
         <p>
-          Design, code, and written with ❤ | © 2020
-          {" "}
-          <a href="/" title="Hakam.">
-            Hakam.
+          Design, code, and written with ❤ | © 2021{" "}
+          <a href="/" title="Syaiful Nur Hakam">
+            Hakam
           </a>
         </p>
       </CreditContainer>

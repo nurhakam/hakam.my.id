@@ -12,7 +12,7 @@ export default function TagTemplate({ data, pageContext }) {
   return (
     <Layout>
       <div className="tag-container">
-        <Helmet title={`Posts tagged as "${tag}" - ${config.siteTitle}`} />
+        <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
         <SEO />
         <Lists posts={tagPosts} />
       </div>

@@ -34,7 +34,7 @@ const Title = styled(Link)`
   display: inline-flex;
   align-items: center;
   font-size: 1.1rem;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.5px;
   margin: 0.5rem 0;
 
   &:hover {
@@ -46,6 +46,10 @@ const Title = styled(Link)`
   }
 
   span.title {
+  }
+
+  @media only screen and (min-width: 600px) {
+    letter-spacing: -1.2px;
   }
 `;
 
@@ -75,7 +79,7 @@ export default function Header() {
   return (
     <Nav>
       <NavBar>
-        <Title to="/" title="Hakam - Full Stack Human">
+        <Title to="/" title="&copy; Syaiful Nur Hakam">
           <span className="logo" role="img" aria-label="apple">
             🍏
           </span>

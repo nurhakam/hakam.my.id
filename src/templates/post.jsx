@@ -66,7 +66,7 @@ export default function PostTemplate({ data }) {
 
   return (
     <Layout>
-      <Helmet title={`${post.frontmatter.title} - ${config.siteTitle}`} />
+      <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
       <SEO postPath={post.fields.slug} postNode={post} postSEO />
       <ArticleContainer>
         <ArticleHeader>

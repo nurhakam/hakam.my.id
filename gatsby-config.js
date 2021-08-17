@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Hakam.",
+    title: "Hakam",
     author: {
       name: "Syaiful Nur Hakam",
     },
     pathPrefix: "/",
     siteUrl: "https://hakam.my.id",
-    description: "Full stack human. Doing my best to become better human",
+    description: "Full stack human. Doing my best to become better human. &copy; Syaiful Nur Hakam",
     feedUrl: "https://hakam.my.id/rss.xml",
     logo: "https://hakam.my.id/logo.png",
   },
@@ -15,6 +15,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-catch-links",
 
     // Image and static
     {
@@ -83,19 +84,16 @@ module.exports = {
       `,
         feeds: [
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map((edge) => {
-                return {
-                  ...edge.node.frontmatter,
-                  categories: edge.node.frontmatter.tags,
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.body }],
-                };
-              });
-            },
+            serialize: ({ query: { site, allMdx } }) =>
+              allMdx.edges.map((edge) => ({
+                ...edge.node.frontmatter,
+                categories: edge.node.frontmatter.tags,
+                description: edge.node.excerpt,
+                date: edge.node.frontmatter.date,
+                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                custom_elements: [{ "content:encoded": edge.node.body }],
+              })),
             query: `
             {
               allMdx(

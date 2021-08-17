@@ -55,28 +55,26 @@ const PostInfo = styled.div`
 export default function Lists({ posts }) {
   return (
     <Container>
-      {posts.map((post) => {
-        return (
-          <PostsEach key={post.node.id}>
-            <h2>
-              <Link to={post.node.fields.slug}>
-                {post.node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>{post.node.excerpt}</p>
-            <p>
-              <Link to={post.node.fields.slug}>Read More</Link>
-            </p>
-            <PostInfo>
-              <Tags tags={post.node.frontmatter.tags} />
-              <time>
-                {"📅 "}
-                {post.node.frontmatter.date}
-              </time>
-            </PostInfo>
-          </PostsEach>
-        );
-      })}
+      {posts.map((post) => (
+        <PostsEach key={post.node.id}>
+          <h2>
+            <Link to={post.node.fields.slug}>
+              {post.node.frontmatter.title}
+            </Link>
+          </h2>
+          <p>{post.node.excerpt}</p>
+          <p>
+            <Link to={post.node.fields.slug}>Read More</Link>
+          </p>
+          <PostInfo>
+            <Tags tags={post.node.frontmatter.tags} />
+            <time>
+              {"📅 "}
+              {post.node.frontmatter.date}
+            </time>
+          </PostInfo>
+        </PostsEach>
+      ))}
     </Container>
   );
 }
