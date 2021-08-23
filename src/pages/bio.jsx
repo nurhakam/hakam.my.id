@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import SEO from "../components/SEO";
 
+import "../base.css";
 import config from "../utils/config";
 
 const Container = styled.div`
