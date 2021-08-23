@@ -1,6 +1,6 @@
 # hakam.my.id
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/fbdbaee1-06e8-40c4-9829-fb62d4c25ff7/deploy-status)](https://app.netlify.com/sites/sad-bartik-e0d324/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/fbdbaee1-06e8-40c4-9829-fb62d4c25ff7/deploy-status)](https://app.netlify.com/sites/hakam/deploys)
 
 Hakam's personal website running on Gatsby, React, and Node.js.
 
