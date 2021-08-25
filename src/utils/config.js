@@ -5,7 +5,7 @@ export default {
   description: "Full stack human. Doing my best to become better human",
   userTwitter: "nurhakam",
   profile: "/profile.jpg",
-  bio : [
+  bio: [
     {
       title: "Website",
       link: "/",

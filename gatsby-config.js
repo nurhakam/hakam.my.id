@@ -6,16 +6,17 @@ module.exports = {
     },
     pathPrefix: "/",
     siteUrl: "https://hakam.my.id",
-    description: "Full stack human. Doing my best to become better human. &copy; Syaiful Nur Hakam",
+    description:
+      "Full stack human. Doing my best to become better human. &copy; Syaiful Nur Hakam",
     feedUrl: "https://hakam.my.id/rss.xml",
     logo: "https://hakam.my.id/logo.png",
   },
 
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
+    "gatsby-plugin-advanced-sitemap",
 
     // Image and static
     {

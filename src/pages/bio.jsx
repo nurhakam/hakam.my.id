@@ -42,10 +42,10 @@ const ListItem = styled.div`
     padding: 16px 20px;
     justify-content: center;
     border: 4px solid;
-    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, 
-                border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, 
-                transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, 
-                background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+      border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+      transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+      background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 
     &:hover {
       background-color: white;
@@ -63,9 +63,9 @@ const Footer = styled.p`
   margin-top: 20px;
 `;
 
-export default function Index () {
-  const {bio} = config
-  const {bioExternal} = config
+export default function Index() {
+  const { bio } = config;
+  const { bioExternal } = config;
 
   return (
     <>
@@ -73,23 +73,26 @@ export default function Index () {
       <SEO />
       <Container>
         <Logo>
-          <img src={`${config.profile}`} alt="Logo"/>
+          <img src={`${config.profile}`} alt="Logo" />
         </Logo>
         <h1>Syaiful Nur Hakam</h1>
         <Title>Creative Writer</Title>
         <p>You can find me on the link below :</p>
         {bio.map((list) => (
           <ListItem key={list.title}>
-              <Link to={`${list.link}`}>
-              {list.title}
-              </Link>
+            <Link to={`${list.link}`}>{list.title}</Link>
           </ListItem>
         ))}
         {bioExternal.map((list) => (
           <ListItem key={list.title}>
-              <a href={`${list.link}`} title={list.title} target="_blank" rel="noopener noreferrer">
+            <a
+              href={`${list.link}`}
+              title={list.title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {list.title}
-              </a>
+            </a>
           </ListItem>
         ))}
         <Footer>

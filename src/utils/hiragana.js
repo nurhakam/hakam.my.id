@@ -2,187 +2,187 @@ export default {
   hiragana: [
     {
       char: "a",
-      unicode: "あ"
+      unicode: "あ",
     },
     {
       char: "i",
-      unicode: "い"
+      unicode: "い",
     },
     {
       char: "u",
-      unicode: "う"
+      unicode: "う",
     },
     {
       char: "e",
-      unicode: "え"
+      unicode: "え",
     },
     {
       char: "o",
-      unicode: "お"
+      unicode: "お",
     },
     {
       char: "ka",
-      unicode: "か"
+      unicode: "か",
     },
     {
       char: "ki",
-      unicode: "き"
+      unicode: "き",
     },
     {
       char: "ku",
-      unicode: "く"
+      unicode: "く",
     },
     {
       char: "ke",
-      unicode: "け"
+      unicode: "け",
     },
     {
       char: "ko",
-      unicode: "こ"
+      unicode: "こ",
     },
     {
       char: "sa",
-      unicode: "さ"
+      unicode: "さ",
     },
     {
       char: "shi",
-      unicode: "し"
+      unicode: "し",
     },
     {
       char: "su",
-      unicode: "す"
+      unicode: "す",
     },
     {
       char: "se",
-      unicode: "せ"
+      unicode: "せ",
     },
     {
       char: "so",
-      unicode: "そ"
+      unicode: "そ",
     },
     {
       char: "ta",
-      unicode: "た"
+      unicode: "た",
     },
     {
       char: "chi",
-      unicode: "ち"
+      unicode: "ち",
     },
     {
       char: "tsu",
-      unicode: "つ"
+      unicode: "つ",
     },
     {
       char: "te",
-      unicode: "て"
+      unicode: "て",
     },
     {
       char: "to",
-      unicode: "と"
+      unicode: "と",
     },
     {
       char: "na",
-      unicode: "な"
+      unicode: "な",
     },
     {
       char: "ni",
-      unicode: "に"
+      unicode: "に",
     },
     {
       char: "nu",
-      unicode: "ぬ"
+      unicode: "ぬ",
     },
     {
       char: "ne",
-      unicode: "ね"
+      unicode: "ね",
     },
     {
       char: "no",
-      unicode: "の"
+      unicode: "の",
     },
     {
       char: "ha",
-      unicode: "は"
+      unicode: "は",
     },
     {
       char: "hi",
-      unicode: "ひ"
+      unicode: "ひ",
     },
     {
       char: "fu",
-      unicode: "ふ"
+      unicode: "ふ",
     },
     {
       char: "he",
-      unicode: "へ"
+      unicode: "へ",
     },
     {
       char: "ho",
-      unicode: "ほ"
+      unicode: "ほ",
     },
     {
       char: "ma",
-      unicode: "ま"
+      unicode: "ま",
     },
     {
       char: "mi",
-      unicode: "み"
+      unicode: "み",
     },
     {
       char: "mu",
-      unicode: "む"
+      unicode: "む",
     },
     {
       char: "me",
-      unicode: "め"
+      unicode: "め",
     },
     {
       char: "mo",
-      unicode: "も"
+      unicode: "も",
     },
     {
       char: "ya",
-      unicode: "や"
+      unicode: "や",
     },
     {
       char: "yu",
-      unicode: "ゆ"
+      unicode: "ゆ",
     },
     {
       char: "yo",
-      unicode: "よ"
+      unicode: "よ",
     },
     {
       char: "ra",
-      unicode: "ら"
+      unicode: "ら",
     },
     {
       char: "ri",
-      unicode: "り"
+      unicode: "り",
     },
     {
       char: "ru",
-      unicode: "る"
+      unicode: "る",
     },
     {
       char: "re",
-      unicode: "れ"
+      unicode: "れ",
     },
     {
       char: "ro",
-      unicode: "ろ"
+      unicode: "ろ",
     },
     {
       char: "wa",
-      unicode: "わ"
+      unicode: "わ",
     },
     {
       char: "wo",
-      unicode: "を"
+      unicode: "を",
     },
     {
       char: "n",
-      unicode: "ん"
+      unicode: "ん",
     },
-  ]
+  ],
 };

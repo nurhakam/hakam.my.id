@@ -15,7 +15,7 @@
   "typingOptions": {
     "enableAutoDiscovery": true
   },
-  "compileOnSave": true,
   "allowJS": true,
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": [".cache", "node_modules", "public"]
 }
