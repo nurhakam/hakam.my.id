@@ -53,6 +53,7 @@ jspm_packages
 .yarn-integrity
 
 # Yarn
+.yarn
 yarn-error.log
 .pnp/
 .pnp.js

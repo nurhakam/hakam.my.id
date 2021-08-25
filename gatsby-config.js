@@ -17,6 +17,7 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-advanced-sitemap",
+    "gatsby-plugin-offline",
 
     // Image and static
     {

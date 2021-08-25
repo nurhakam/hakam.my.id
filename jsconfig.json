@@ -17,5 +17,5 @@
   },
   "allowJS": true,
   "include": ["src/**/*"],
-  "exclude": [".cache", "node_modules", "public"]
+  "exclude": [".cache", ".yarn", "node_modules", "public"]
 }

@@ -1,4 +1,5 @@
 .cache
+.yarn
 content
 node_modules
 public
