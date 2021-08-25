@@ -53,10 +53,16 @@ jspm_packages
 .yarn-integrity
 
 # Yarn
-.yarn
 yarn-error.log
 .pnp/
 .pnp.js
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # Build Files
 .cache/
