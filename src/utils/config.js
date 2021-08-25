@@ -14,6 +14,10 @@ export default {
       title: "What's happening?",
       link: "/now",
     },
+    {
+      title: "Hiragana Quiz",
+      link: "/hiragana",
+    },
   ],
   bioExternal: [
     {

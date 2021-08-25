@@ -3,7 +3,7 @@
   "private": true,
   "description": "Personal website running on Gatsby, React, and Node.js.",
   "version": "1.0.2",
-  "author": "Syaiful Nur Hakam <hakam_@merahputih.id> (https://hakam.my.id)",
+  "author": "Syaiful Nur Hakam <say.hi@hakam.my.id> (https://hakam.my.id)",
   "repository": "git@github.com:nurhakam/hakam.my.id",
   "license": "MIT",
   "dependencies": {
