@@ -133,7 +133,7 @@ export default function Index() {
     const x = document.querySelector(".answer").value;
     const y = hiragana[currentQuestion].char;
     const unknown = `unknown${y}`;
-    const char = `c${y}`;
+    const char = `char${y}`;
     if (x === y && currentQuestion < 45) {
       const nextQuestion = currentQuestion + 1;
       setCurrentQuestion(nextQuestion);
@@ -153,7 +153,7 @@ export default function Index() {
       const lastQuestion = currentQuestion;
       const last = hiragana[lastQuestion].char;
       const lastUnknown = `unknown${last}`;
-      const lastChar = `c${last}`;
+      const lastChar = `char${last}`;
       document.querySelector(".result").style.backgroundColor = "#25bd25";
       document.querySelector(`.${last}`).style.border = "2px solid #25bd25";
       document.querySelector(".result").innerHTML = "Selesai!";
@@ -224,7 +224,7 @@ export default function Index() {
             <Li className={`list ${hira.char}`} key={hira.char}>
               <div>
                 {hira.unicode}
-                <Char className={`char c${hira.char}`}>{hira.char}</Char>
+                <Char className={`char char${hira.char}`}>{hira.char}</Char>
                 <div className={`unknown unknown${hira.char}`}>?</div>
               </div>
             </Li>
