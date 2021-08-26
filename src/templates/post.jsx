@@ -8,8 +8,6 @@ import Tags from "../components/Tags";
 import SEO from "../components/SEO";
 import config from "../utils/config";
 
-import "../new-moon.css";
-
 const ArticleContainer = styled.section`
   padding: 0 1.5rem;
 

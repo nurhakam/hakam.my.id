@@ -65,6 +65,9 @@ module.exports = {
         theme_color: "#5183f5",
         display: "minimal-ui",
         icon: "static/logo.png",
+        icon_options: {
+          purpose: "any maskable",
+        },
       },
     },
 

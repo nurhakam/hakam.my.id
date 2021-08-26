@@ -91,22 +91,23 @@ const Char = styled.div`
 export default function Index() {
   const { hiragana } = hiraganaData;
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  let onlyOnce = false;
+  const [onlyOnce, setOnce] = useState(false);
 
   function shuffle(a) {
+    const once = true;
     for (let i = a.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
       [a[i], a[j]] = [a[j], a[i]];
     }
+    setOnce(once);
   }
 
   function shiragana() {
     if (currentQuestion === 0 && onlyOnce === false) {
       shuffle(hiragana);
-      onlyOnce = true;
     }
   }
-
+  
   shiragana();
 
   function validateForm() {
@@ -177,18 +178,31 @@ export default function Index() {
           autoComplete="off"
           onInput={() => validateForm()}
         />
-        <Button className="reload" type="button" onClick={() => reloadCode()}>
+        <Button 
+          className="reload" 
+          type="button" 
+          onClick={() => reloadCode()}
+        >
           Muat ulang
         </Button>
         <Row>
-          {hiragana.map((hira) => (
-            <Li className={`list ${hira.char}`} key={hira.char}>
-              <div>
-                {hira.unicode}
-                <Char className={`char${hira.char}`}>{hira.char}</Char>
-              </div>
-            </Li>
-          ))}
+          {
+            hiragana.map((hira) => (
+              <Li 
+              className={`list ${hira.char}`} 
+              key={hira.char}
+              >
+                <div>
+                  {hira.unicode}
+                  <Char 
+                  className={`char${hira.char}`}
+                  >
+                    {hira.char}
+                  </Char>
+                </div>
+              </Li>
+            ))
+          }
         </Row>
       </Container>
     </>
