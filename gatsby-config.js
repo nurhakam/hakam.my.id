@@ -18,6 +18,7 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-advanced-sitemap",
     "gatsby-plugin-offline",
+    "gatsby-plugin-netlify",
 
     // Image and static
     {
