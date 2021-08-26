@@ -55,5 +55,5 @@
     "format:mdx": "yarn prettier --check --ignore-path .gitignore --write '**/*.{md, mdx}'",
     "check": "yarn upgrade-interactive"
   },
-  "packageManager": "yarn@3.0.1"
+  "packageManager": "yarn@1.22.5"
 }
