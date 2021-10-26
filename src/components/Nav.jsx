@@ -89,9 +89,6 @@ export default function Header() {
           <Link to="/blog" activeClassName="active">
             Articles
           </Link>
-          <Link to="/#" activeClassName="active">
-            Notes
-          </Link>
           <Link to="/now" activeClassName="active">
             What&apos;s up?
           </Link>

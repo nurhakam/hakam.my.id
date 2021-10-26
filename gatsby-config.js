@@ -7,7 +7,7 @@ module.exports = {
     pathPrefix: "/",
     siteUrl: "https://hakam.my.id",
     description:
-      "Full stack human. Doing my best to become better human. &copy; Syaiful Nur Hakam",
+      "Syaiful Nur Hakam's personal website. A full stack human, doing my best to become better human. &copy; 2021.",
     feedUrl: "https://hakam.my.id/rss.xml",
     logo: "https://hakam.my.id/logo.png",
   },
@@ -60,7 +60,7 @@ module.exports = {
       options: {
         name: "Hakam.",
         short_name: "Hakam.",
-        description: "Full stack human. Doing my best to become better human",
+        description: "Syaiful Nur Hakam's personal website. A full stack human, doing my best to become better human",
         start_url: "/",
         background_color: "white",
         theme_color: "#5183f5",
