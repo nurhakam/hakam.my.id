@@ -1,6 +1,7 @@
 .cache
 .yarn
-.yarn/cache
+.frontmatter
+.vscode
 content
 node_modules
 public

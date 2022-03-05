@@ -16,7 +16,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-complex-sitemap-tree",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
 

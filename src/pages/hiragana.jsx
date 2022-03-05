@@ -159,7 +159,7 @@ export default function Index() {
     shuffle(hiragana2);
     document.querySelector(".start").style.display = "none";
     document.querySelector(".container").style.display = "flex";
-    reloadCode()
+    reloadCode();
   }
 
   function validateForm() {

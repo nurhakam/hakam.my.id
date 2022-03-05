@@ -3421,7 +3421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
+"@types/node@npm:*, @types/node@npm:>=10.0.0, @types/node@npm:^17.0.5":
   version: 17.0.21
   resolution: "@types/node@npm:17.0.21"
   checksum: 89dcd2fe82f21d3634266f8384e9c865cf8af49685639fbdbd799bdd1040480fb1e8eeda2d3b9fce41edbe704d2a4be9f427118c4ae872e8d9bb7cbeb3c41a94
@@ -3499,6 +3499,15 @@ __metadata:
     "@types/glob": "*"
     "@types/node": "*"
   checksum: e388f546840704a240fb31536498921623bca4ec1230925013d6b6d7c7d2211c8ec07fcbbd2606151d7549cbbc28a01c18fb0df502107a9293860a5ff64bc147
+  languageName: node
+  linkType: hard
+
+"@types/sax@npm:^1.2.1":
+  version: 1.2.4
+  resolution: "@types/sax@npm:1.2.4"
+  dependencies:
+    "@types/node": "*"
+  checksum: 2aa50cbf1d1f0cf8541ef1787f94c7442e58e63900afd3b45c354e4140ed5efc5cf26fca8eb9df9970a74c7ea582293ae2083271bd046dedf4c3cc2689a40892
   languageName: node
   linkType: hard
 
@@ -4143,6 +4152,13 @@ __metadata:
   version: 4.1.3
   resolution: "arg@npm:4.1.3"
   checksum: 544af8dd3f60546d3e4aff084d451b96961d2267d668670199692f8d054f0415d86fc5497d0e641e91546f0aa920e7c29e5250e99fc89f5552a34b5d93b77f43
+  languageName: node
+  linkType: hard
+
+"arg@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "arg@npm:5.0.1"
+  checksum: 9aefbcb1204f8dbd541a045bfe99b6515b4dc697c2f704ef2bb5e9fe5464575d97571e91e673a6f23ad72dd1cc24d7d8cf2d1d828e72c08e4d4f6f9237adc761
   languageName: node
   linkType: hard
 
@@ -8205,15 +8221,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-complex-sitemap-tree@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "gatsby-plugin-complex-sitemap-tree@npm:1.0.2"
-  peerDependencies:
-    gatsby: ^2.0.0 ||^3.0.0 || ^4.0.0
-  checksum: d51480e4540c9e62a3de47cf32a547fd12028dc87f74d3630b99ef95c4ec5646be17cb7a4c537438838d826321132af82e561da07bf1331e718ca7c15a2a36e8
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-feed@npm:^4.9.0":
   version: 4.9.0
   resolution: "gatsby-plugin-feed@npm:4.9.0"
@@ -8394,6 +8401,22 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 375fd1ba330371018b052637897d6e4740a03265cbb31fc05e00a134e713920950509fa050074e0554ec907fe17513710dea342374fad3cda04c9859d26e7317
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-sitemap@npm:^5.9.0":
+  version: 5.9.0
+  resolution: "gatsby-plugin-sitemap@npm:5.9.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    common-tags: ^1.8.2
+    minimatch: ^3.0.4
+    sitemap: ^7.0.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+    react: ^16.9.0 || ^17.0.0
+    react-dom: ^16.9.0 || ^17.0.0
+  checksum: 935ef5a0cd2c485f2d0fe6cb9965f2f7802cd9b184eaa46d591707eaafbe82e9cf3a322f642d238d0f7ce2a71a4c6af89f20de1343553968c622e69ff4cb6871
   languageName: node
   linkType: hard
 
@@ -9223,7 +9246,6 @@ __metadata:
     gatsby-image: ^3.11.0
     gatsby-parcel-config: ^0.0.1
     gatsby-plugin-catch-links: ^4.9.0
-    gatsby-plugin-complex-sitemap-tree: ^1.0.2
     gatsby-plugin-feed: ^4.9.0
     gatsby-plugin-manifest: ^4.9.0
     gatsby-plugin-mdx: ^3.9.0
@@ -9231,6 +9253,7 @@ __metadata:
     gatsby-plugin-offline: ^5.9.0
     gatsby-plugin-react-helmet: ^5.9.0
     gatsby-plugin-sharp: ^4.9.0
+    gatsby-plugin-sitemap: ^5.9.0
     gatsby-plugin-styled-components: ^5.9.0
     gatsby-remark-autolink-headers: ^5.9.0
     gatsby-remark-images: ^6.9.0
@@ -14939,6 +14962,20 @@ __metadata:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: aba6438f46d2bfcef94cf112c835ab395172c75f67453fe05c340c770d3c402363018ae1ab4172a1026a90c47eaccf3af7b6ff6fa749a680c2929bd7fa2b37a4
+  languageName: node
+  linkType: hard
+
+"sitemap@npm:^7.0.0":
+  version: 7.1.1
+  resolution: "sitemap@npm:7.1.1"
+  dependencies:
+    "@types/node": ^17.0.5
+    "@types/sax": ^1.2.1
+    arg: ^5.0.0
+    sax: ^1.2.4
+  bin:
+    sitemap: dist/cli.js
+  checksum: 87a6d21b0d4a33b8c611d3bb8543d02b813c0ebfce014213ef31849b5c1439005644f19ad1593ec89815f6101355f468c9a02c251d09aa03f6fddd17e23c4be4
   languageName: node
   linkType: hard
 
