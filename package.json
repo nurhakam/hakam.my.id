@@ -2,7 +2,7 @@
   "name": "hakam.my.id",
   "private": true,
   "description": "Personal website running on Gatsby, React, and Node.js.",
-  "version": "1.0.2",
+  "version": "1.22.5",
   "author": "Syaiful Nur Hakam <say.hi@hakam.my.id> (https://hakam.my.id)",
   "repository": "git@github.com:nurhakam/hakam.my.id",
   "license": "MIT",
@@ -54,7 +54,7 @@
     "format:js": "yarn prettier --check --ignore-path .eslintignore --ignore-path .gitignore **/*.{js,jsx} --write",
     "format:styles": "yarn prettier --check --ignore-path .eslintignore --ignore-path .gitignore **/*.css --write",
     "format:mdx": "yarn prettier --check --ignore-path .gitignore **/*.{md, mdx} --write",
-    "check": "yarn upgrade-interactive --latest"
+    "check": "yarn upgrade-interactive --latest --ignore-engines"
   },
   "packageManager": "yarn@1.22.5"
 }
