@@ -204,7 +204,7 @@ export default function Index() {
     document.querySelector(".answer").style.display = "block";
     document.querySelector(".answer").value = "";
     document.querySelector(".reload").style.display = "none";
-    document.querySelector(".result").innerHTML = "Silakan jawab!";
+    document.querySelector(".result").innerHTML = "";
     document.querySelector(".result").style.backgroundColor = "#acacac";
     for (i = 0; i < list.length; i += 1) {
       list[i].style.border = "2px solid #f7ce3d";
@@ -242,7 +242,7 @@ export default function Index() {
         </Header>
         <Row>
           <Score>{currentQuestion + 1} / 46</Score>
-          <Alert className="result">Silahkan jawab!</Alert>
+          <Alert className="result"></Alert>
           <Lv>{level}</Lv>
         </Row>
         <Input
