@@ -17,7 +17,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
 
     // Image and static
@@ -35,6 +34,7 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-remark-images",
@@ -48,7 +48,6 @@ module.exports = {
             resolve: "gatsby-remark-images",
           },
           "gatsby-remark-autolink-headers",
-          "gatsby-remark-prismjs",
         ],
         extensions: [`.md`, `.mdx`],
       },
@@ -67,67 +66,19 @@ module.exports = {
         theme_color: "#5183f5",
         display: "minimal-ui",
         icon: "static/logo.png",
+        cache_busting_mode: "none",
         icon_options: {
           purpose: "any maskable",
         },
       },
     },
 
-    // Feed
     {
-      resolve: "gatsby-plugin-feed",
+      resolve: "gatsby-plugin-offline",
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-            }
-          }
-        }
-      `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) =>
-              allMdx.edges.map((edge) => ({
-                ...edge.node.frontmatter,
-                categories: edge.node.frontmatter.tags,
-                description: edge.node.excerpt,
-                date: edge.node.frontmatter.date,
-                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.body }],
-              })),
-            query: `
-            {
-              allMdx(
-                sort: { order: DESC, fields: [frontmatter___date] },
-                filter: { frontmatter: { template: { eq: "post" } } }
-              ) {
-                edges {
-                  node {
-                    excerpt
-                    body
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                      tags
-                    }
-                  }
-                }
-              }
-            }
-          `,
-            output: "/rss.xml",
-            title: "Hakam. | RSS Feed",
-          },
-        ],
+         workboxConfig: {
+            globPatterns: ["**/icon-path*"]
+         },
       },
     },
   ],

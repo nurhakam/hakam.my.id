@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import SEO from "../components/SEO";
 
-import "../base.css";
 import hiraganaData from "../utils/hiragana";
 import hiraganaData2 from "../utils/hiragana2";
 
@@ -131,35 +130,29 @@ export default function Index() {
   const { hiragana2 } = hiraganaData2;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [onlyOnce, setOnce] = useState(false);
-  const [onlyLevel2, setLevel2] = useState(false);
   const [level, setLevel] = useState("Lv. 1");
   const [useData, setData] = useState(hiragana);
 
-  function shuffle(b) {
+  function shuffle(array) {
     const once = true;
-    const a = b;
-    for (let i = a.length - 1; i > 0; i -= 1) {
+    for (let i = array.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
+      [array[i], array[j]] = [array[j], array[i]];
     }
     setOnce(once);
   }
 
-  function shiragana() {
-    setData(hiragana);
-    shuffle(hiragana);
+  function pilihLevel(lvl) {
+    setData(lvl);
+    shuffle(lvl);
     document.querySelector(".start").style.display = "none";
     document.querySelector(".container").style.display = "flex";
-  }
-
-  function naikLevel() {
-    setLevel2(true);
-    setLevel("Lv. 2");
-    setData(hiragana2);
-    shuffle(hiragana2);
-    document.querySelector(".start").style.display = "none";
-    document.querySelector(".container").style.display = "flex";
-    reloadCode();
+    if (lvl === hiragana && onlyOnce === false ) {
+      setLevel("Lv. 1");;
+    };
+    if (lvl === hiragana2) {
+      setLevel("Lv. 2");
+    };
   }
 
   function validateForm() {
@@ -233,10 +226,10 @@ export default function Index() {
       <Home>
         <H1>#HiraganaQuiz</H1>
         <Start className="start">
-          <Level type="button" onClick={() => shiragana()}>
+          <Level type="button" onClick={() => pilihLevel(hiragana)}>
             Level 1
           </Level>
-          <Level type="button" onClick={() => naikLevel()}>
+          <Level type="button" onClick={() => pilihLevel(hiragana2)}>
             Level 2
           </Level>
         </Start>

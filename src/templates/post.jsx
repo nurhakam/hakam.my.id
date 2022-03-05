@@ -94,9 +94,7 @@ export const pageQuery = graphql`
         tags
         thumbnail {
           childImageSharp {
-            fixed {
-              src
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

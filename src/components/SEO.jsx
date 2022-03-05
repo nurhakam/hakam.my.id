@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 
 import config from "../utils/config";
 
-export default function SEO({
+export default function SEO_Component({
   postNode,
   postPath,
   postSEO,
@@ -20,7 +20,7 @@ export default function SEO({
     description = postMeta.description || postNode.excerpt;
 
     if (postMeta.thumbnail) {
-      image = postMeta.thumbnail.childImageSharp.fixed.src;
+      image = postMeta.thumbnail.childImageSharp.fixed;
     }
 
     postURL = `${config.siteUrl}${postPath}`;

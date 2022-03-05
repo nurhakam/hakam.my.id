@@ -1,8 +1,0 @@
-.cache
-.yarn
-.frontmatter
-.vscode
-content
-node_modules
-public
-static
