@@ -17,7 +17,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-netlify",
 
     // Image and static
     {
