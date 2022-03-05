@@ -17,6 +17,14 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-preact",
+
+    {
+      resolve: "gatsby-plugin-zopfli",
+      options: {
+        extensions: ['css', 'html', 'js', 'svg', 'png', 'jpg']
+      },
+    },
 
     // Image and static
     {

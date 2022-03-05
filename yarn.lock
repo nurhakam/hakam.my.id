@@ -1582,6 +1582,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gfx/zopfli@npm:^1.0.15":
+  version: 1.0.15
+  resolution: "@gfx/zopfli@npm:1.0.15"
+  dependencies:
+    base64-js: ^1.3.0
+  checksum: 4d7156a861acda05e8c0de7d538e0a8e7321c19c5b3895f59b518b7a85273d53821978b10b358a4e3f89172946fb49b4f439ab79b1eb1c20d885048b4231be05
+  languageName: node
+  linkType: hard
+
 "@graphql-tools/batch-execute@npm:^7.1.2":
   version: 7.1.2
   resolution: "@graphql-tools/batch-execute@npm:7.1.2"
@@ -3061,6 +3070,43 @@ __metadata:
     webpack-plugin-serve:
       optional: true
   checksum: 36a7b0c63f0aabde856a2b43f3f3bfa7919920afa67b4fbcf7d4980b286c7c11e34ada13654d81bf30c3d3e2c12a5b9eef6c15e21a200003b8030809d3ddd6c6
+  languageName: node
+  linkType: hard
+
+"@prefresh/babel-plugin@npm:^0.4.1":
+  version: 0.4.3
+  resolution: "@prefresh/babel-plugin@npm:0.4.3"
+  checksum: 0bd68589b1491da7b5c4920a9958b74fbdf75f54c12b5713e1c708e4a21df7f47f9d265d8ee291bdc03c3c4fcd12bd97b34835b565292c0a69a5858ff37e556c
+  languageName: node
+  linkType: hard
+
+"@prefresh/core@npm:^1.3.3":
+  version: 1.3.4
+  resolution: "@prefresh/core@npm:1.3.4"
+  peerDependencies:
+    preact: ^10.0.0
+  checksum: 545cc3e678bf0669e5726ac4da5b5f95ae7f1ce20e850a2a824e662e1fae11422d9681b5cc253b07c1ebe09a8c42c4b2247a45afecc81014b799eb1a8d7447a0
+  languageName: node
+  linkType: hard
+
+"@prefresh/utils@npm:^1.1.2":
+  version: 1.1.3
+  resolution: "@prefresh/utils@npm:1.1.3"
+  checksum: a95b816d08a68f499489f1e0098effcda99ccba06c80986cb0dfbcda4fc9c8f8e3238603ead4ee35bb9fb7985de66b1a785d12c64fbc61600e0a8bd388fc2de0
+  languageName: node
+  linkType: hard
+
+"@prefresh/webpack@npm:^3.3.2":
+  version: 3.3.3
+  resolution: "@prefresh/webpack@npm:3.3.3"
+  dependencies:
+    "@prefresh/core": ^1.3.3
+    "@prefresh/utils": ^1.1.2
+  peerDependencies:
+    "@prefresh/babel-plugin": ^0.4.0
+    preact: ^10.4.0
+    webpack: ^4.0.0 || ^5.0.0
+  checksum: 6c12f78267d4a0f45caf8956ad5bea7c50e2fc6e33a5cb77fd23b73a87770931b802ac1d3bf5e35482867a1dd82ef40a78490c0da9224d7df881ae4ccea89d76
   languageName: node
   linkType: hard
 
@@ -4621,7 +4667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"base64-js@npm:^1.3.1":
+"base64-js@npm:^1.2.0, base64-js@npm:^1.3.0, base64-js@npm:^1.3.1":
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
   checksum: 669632eb3745404c2f822a18fc3a0122d2f9a7a13f7fb8b5823ee19d1d2ff9ee5b52c53367176ea4ad093c332fd5ab4bd0ebae5a8e27917a4105a4cfc86b1005
@@ -7249,6 +7295,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eventemitter-asyncresource@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "eventemitter-asyncresource@npm:1.0.0"
+  checksum: 3cfbbc3490bd429a165bff6336289ff810f7df214796f25000d2097a5a0883eae51542a78674916ff99bbd4c66811911b310df1cb4fc96dfc9546ba9dfc89f8f
+  languageName: node
+  linkType: hard
+
 "eventemitter3@npm:^3.1.0":
   version: 3.1.2
   resolution: "eventemitter3@npm:3.1.2"
@@ -8159,6 +8212,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-preact@npm:^6.9.0":
+  version: 6.9.0
+  resolution: "gatsby-plugin-preact@npm:6.9.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    "@gatsbyjs/webpack-hot-middleware": ^2.25.2
+    "@prefresh/babel-plugin": ^0.4.1
+    "@prefresh/webpack": ^3.3.2
+  peerDependencies:
+    gatsby: ^4.0.0-next
+    preact: ^10.3.4
+    preact-render-to-string: ^5.1.8
+  checksum: 7090636681ce7f3671779120192ea648b7acf8844c6af74a109f4bd1354ac86dd2fc3ee79d19100e974516d26c203c0220b9fac2bf45888f8ce48f98377d6a00
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-react-helmet@npm:^5.9.0":
   version: 5.9.0
   resolution: "gatsby-plugin-react-helmet@npm:5.9.0"
@@ -8257,6 +8326,18 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: e0614ed7c43cd91ef0c517fde52235cd86b1ba6af074a5c9c22b01f24a8c2913a1d62d1ac2f786b3e3a4c14027a4f0ad06bbfb9735aa2496fac2f9801e7fe3e8
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-zopfli@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "gatsby-plugin-zopfli@npm:2.0.0"
+  dependencies:
+    "@gfx/zopfli": ^1.0.15
+    glob: ^7.1.6
+    mkdirp: ^1.0.4
+    piscina: ^1.6.3
+  checksum: 0aa2b82e146f5e6d8b8c933ace5c4eb88525c5200bda4b83cf448505c49bc664907173192963724a2dbba4a99eb6d18610a23e09aacb80015474f67163468cea
   languageName: node
   linkType: hard
 
@@ -8728,7 +8809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.2.0":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.2.0":
   version: 7.2.0
   resolution: "glob@npm:7.2.0"
   dependencies:
@@ -9014,14 +9095,18 @@ __metadata:
     gatsby-plugin-manifest: ^4.9.0
     gatsby-plugin-mdx: ^3.9.0
     gatsby-plugin-offline: ^5.9.0
+    gatsby-plugin-preact: ^6.9.0
     gatsby-plugin-react-helmet: ^5.9.0
     gatsby-plugin-sharp: ^4.9.0
     gatsby-plugin-sitemap: ^5.9.0
     gatsby-plugin-styled-components: ^5.9.0
+    gatsby-plugin-zopfli: ^2.0.0
     gatsby-remark-autolink-headers: ^5.9.0
     gatsby-remark-images: ^6.9.0
     gatsby-source-filesystem: ^4.9.0
     gatsby-transformer-sharp: ^4.9.0
+    preact: ^10.6.6
+    preact-render-to-string: ^5.1.20
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
@@ -9223,6 +9308,25 @@ __metadata:
     property-information: ^5.0.0
     space-separated-tokens: ^1.0.0
   checksum: 5e50b85af0d2cb7c17979cb1ddca75d6b96b53019dd999b39e7833192c9004201c3cee6445065620ea05d0087d9ae147a4844e582d64868be5bc6b0232dfe52d
+  languageName: node
+  linkType: hard
+
+"hdr-histogram-js@npm:^1.0.0, hdr-histogram-js@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "hdr-histogram-js@npm:1.2.0"
+  dependencies:
+    base64-js: ^1.2.0
+    pako: ^1.0.3
+  checksum: 2d871a2d78b96b6d228ae4e760ca059962a700356172fc25bf8c7c9643693dfa665eae4c3144dc15429aa182302247d269b68c48b61f050a0c8b6560c7c6da76
+  languageName: node
+  linkType: hard
+
+"hdr-histogram-percentiles-obj@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "hdr-histogram-percentiles-obj@npm:2.0.1"
+  dependencies:
+    hdr-histogram-js: ^1.0.0
+  checksum: 80f43047643913d3a295b23fee8d84f5e111674bd7245bb53ac350c1e4c44147c569a980b319090243245ff7cdaabc074f34e58a66a185a4154d28280b69911b
   languageName: node
   linkType: hard
 
@@ -11739,6 +11843,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nice-napi@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "nice-napi@npm:1.0.2"
+  dependencies:
+    node-addon-api: ^3.0.0
+    node-gyp: latest
+    node-gyp-build: ^4.2.2
+  conditions: "!os=win32"
+  languageName: node
+  linkType: hard
+
 "nice-try@npm:^1.0.4":
   version: 1.0.5
   resolution: "nice-try@npm:1.0.5"
@@ -11781,7 +11896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:^3.2.1":
+"node-addon-api@npm:^3.0.0, node-addon-api@npm:^3.2.1":
   version: 3.2.1
   resolution: "node-addon-api@npm:3.2.1"
   dependencies:
@@ -11820,7 +11935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp-build@npm:^4.2.3, node-gyp-build@npm:^4.3.0":
+"node-gyp-build@npm:^4.2.2, node-gyp-build@npm:^4.2.3, node-gyp-build@npm:^4.3.0":
   version: 4.3.0
   resolution: "node-gyp-build@npm:4.3.0"
   bin:
@@ -12383,7 +12498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pako@npm:^1.0.5":
+"pako@npm:^1.0.3, pako@npm:^1.0.5":
   version: 1.0.11
   resolution: "pako@npm:1.0.11"
   checksum: 1be2bfa1f807608c7538afa15d6f25baa523c30ec870a3228a89579e474a4d992f4293859524e46d5d87fd30fa17c5edf34dbef0671251d9749820b488660b16
@@ -12704,6 +12819,21 @@ __metadata:
   version: 4.0.1
   resolution: "pify@npm:4.0.1"
   checksum: 9c4e34278cb09987685fa5ef81499c82546c033713518f6441778fbec623fc708777fe8ac633097c72d88470d5963094076c7305cafc7ad340aae27cfacd856b
+  languageName: node
+  linkType: hard
+
+"piscina@npm:^1.6.3":
+  version: 1.6.3
+  resolution: "piscina@npm:1.6.3"
+  dependencies:
+    eventemitter-asyncresource: ^1.0.0
+    hdr-histogram-js: ^1.2.0
+    hdr-histogram-percentiles-obj: ^2.0.1
+    nice-napi: ^1.0.2
+  dependenciesMeta:
+    nice-napi:
+      optional: true
+  checksum: 0bc9ae3cbdf922d2d7e906e8e6c819a7b21af90b880362ebab58d9e937d2590ff77552588cf3518b365e240da7e213bf54740395aed1c913de8c935c5693c914
   languageName: node
   linkType: hard
 
@@ -13165,6 +13295,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"preact-render-to-string@npm:^5.1.20":
+  version: 5.1.20
+  resolution: "preact-render-to-string@npm:5.1.20"
+  dependencies:
+    pretty-format: ^3.8.0
+  peerDependencies:
+    preact: ">=10"
+  checksum: 69e36751415cd81b68ac23811122e674f761efca0f5365b5ac90e62498ee1f4d25abe718b6c21f52faa8764582a667378fe1817dadba69ad24259033fddd6d21
+  languageName: node
+  linkType: hard
+
+"preact@npm:^10.6.6":
+  version: 10.6.6
+  resolution: "preact@npm:10.6.6"
+  checksum: d6a9581b222c60595f987be28738b68dabb3045f72043e2619af81e9ca00b2b0942717642bcfcaab77a0afa50a97cd35039139c7f425a62a4f02ceb793d8ef83
+  languageName: node
+  linkType: hard
+
 "prebuild-install@npm:^7.0.1":
   version: 7.0.1
   resolution: "prebuild-install@npm:7.0.1"
@@ -13216,6 +13364,13 @@ __metadata:
     lodash: ^4.17.20
     renderkid: ^2.0.4
   checksum: 16775d06f9a695d17103414d610b1281f9535ee1f2da1ce1e1b9be79584a114aa7eac6dcdcc5ef151756d3c014dfd4ac1c7303ed8016d0cec12437cfdf4021c6
+  languageName: node
+  linkType: hard
+
+"pretty-format@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "pretty-format@npm:3.8.0"
+  checksum: 21a114d43ef06978f8f7f6212be4649b0b094f05d9b30e14e37550bf35c8ca24d8adbca9e5adc4cc15d9eaf7a1e7a30478a4dc37b30982bfdf0292a5b385484c
   languageName: node
   linkType: hard
 

@@ -44,14 +44,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-manifest", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
             ["gatsby-plugin-mdx", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:3.9.0"],\
             ["gatsby-plugin-offline", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
+            ["gatsby-plugin-preact", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.9.0"],\
             ["gatsby-plugin-react-helmet", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
             ["gatsby-plugin-sharp", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
             ["gatsby-plugin-sitemap", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
             ["gatsby-plugin-styled-components", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
+            ["gatsby-plugin-zopfli", "npm:2.0.0"],\
             ["gatsby-remark-autolink-headers", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
             ["gatsby-remark-images", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.9.0"],\
             ["gatsby-source-filesystem", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
             ["gatsby-transformer-sharp", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
+            ["preact", "npm:10.6.6"],\
+            ["preact-render-to-string", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.1.20"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:17.0.2"],\
             ["react-helmet", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.1.0"],\
@@ -2734,6 +2738,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@gfx/zopfli", [\
+        ["npm:1.0.15", {\
+          "packageLocation": "./.yarn/cache/@gfx-zopfli-npm-1.0.15-2b8afd2349-4d7156a861.zip/node_modules/@gfx/zopfli/",\
+          "packageDependencies": [\
+            ["@gfx/zopfli", "npm:1.0.15"],\
+            ["base64-js", "npm:1.5.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@graphql-tools/batch-execute", [\
         ["npm:7.1.2", {\
           "packageLocation": "./.yarn/cache/@graphql-tools-batch-execute-npm-7.1.2-35aecbdfba-1b1b57e2ca.zip/node_modules/@graphql-tools/batch-execute/",\
@@ -5022,6 +5036,78 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "webpack-dev-server",\
             "webpack-hot-middleware",\
             "webpack-plugin-serve",\
+            "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prefresh/babel-plugin", [\
+        ["npm:0.4.3", {\
+          "packageLocation": "./.yarn/cache/@prefresh-babel-plugin-npm-0.4.3-9e68931247-0bd68589b1.zip/node_modules/@prefresh/babel-plugin/",\
+          "packageDependencies": [\
+            ["@prefresh/babel-plugin", "npm:0.4.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prefresh/core", [\
+        ["npm:1.3.4", {\
+          "packageLocation": "./.yarn/cache/@prefresh-core-npm-1.3.4-7ed00793e2-545cc3e678.zip/node_modules/@prefresh/core/",\
+          "packageDependencies": [\
+            ["@prefresh/core", "npm:1.3.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b5cb47d096a8c2817aac26e7a0caa5dd14ca5aa0428a3d37e2f81a8ea41df04d8e19eba75136d4dae4d24fbbd78edbbbeb3eb5031f939543abd42f6905192502#npm:1.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/@prefresh-core-virtual-295039642a/0/cache/@prefresh-core-npm-1.3.4-7ed00793e2-545cc3e678.zip/node_modules/@prefresh/core/",\
+          "packageDependencies": [\
+            ["@prefresh/core", "virtual:b5cb47d096a8c2817aac26e7a0caa5dd14ca5aa0428a3d37e2f81a8ea41df04d8e19eba75136d4dae4d24fbbd78edbbbeb3eb5031f939543abd42f6905192502#npm:1.3.4"],\
+            ["@types/preact", null],\
+            ["preact", "npm:10.6.6"]\
+          ],\
+          "packagePeers": [\
+            "@types/preact",\
+            "preact"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prefresh/utils", [\
+        ["npm:1.1.3", {\
+          "packageLocation": "./.yarn/cache/@prefresh-utils-npm-1.1.3-62987c2ec0-a95b816d08.zip/node_modules/@prefresh/utils/",\
+          "packageDependencies": [\
+            ["@prefresh/utils", "npm:1.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prefresh/webpack", [\
+        ["npm:3.3.3", {\
+          "packageLocation": "./.yarn/cache/@prefresh-webpack-npm-3.3.3-5d5a2b00f5-6c12f78267.zip/node_modules/@prefresh/webpack/",\
+          "packageDependencies": [\
+            ["@prefresh/webpack", "npm:3.3.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:2786764e7511624ec3d42a3e42ac09b13c90eef7c05766e684d8fcce799383a761483d35ecf521572ffcf665ee6001b60e5fbded2973428ea33353d0a89967d2#npm:3.3.3", {\
+          "packageLocation": "./.yarn/__virtual__/@prefresh-webpack-virtual-b5cb47d096/0/cache/@prefresh-webpack-npm-3.3.3-5d5a2b00f5-6c12f78267.zip/node_modules/@prefresh/webpack/",\
+          "packageDependencies": [\
+            ["@prefresh/webpack", "virtual:2786764e7511624ec3d42a3e42ac09b13c90eef7c05766e684d8fcce799383a761483d35ecf521572ffcf665ee6001b60e5fbded2973428ea33353d0a89967d2#npm:3.3.3"],\
+            ["@prefresh/babel-plugin", "npm:0.4.3"],\
+            ["@prefresh/core", "virtual:b5cb47d096a8c2817aac26e7a0caa5dd14ca5aa0428a3d37e2f81a8ea41df04d8e19eba75136d4dae4d24fbbd78edbbbeb3eb5031f939543abd42f6905192502#npm:1.3.4"],\
+            ["@prefresh/utils", "npm:1.1.3"],\
+            ["@types/preact", null],\
+            ["@types/prefresh__babel-plugin", null],\
+            ["@types/webpack", null],\
+            ["preact", "npm:10.6.6"],\
+            ["webpack", null]\
+          ],\
+          "packagePeers": [\
+            "@prefresh/babel-plugin",\
+            "@types/preact",\
+            "@types/prefresh__babel-plugin",\
+            "@types/webpack",\
+            "preact",\
             "webpack"\
           ],\
           "linkType": "HARD"\
@@ -10181,6 +10267,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["eventemitter-asyncresource", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/eventemitter-asyncresource-npm-1.0.0-de223b5f00-3cfbbc3490.zip/node_modules/eventemitter-asyncresource/",\
+          "packageDependencies": [\
+            ["eventemitter-asyncresource", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["eventemitter3", [\
         ["npm:3.1.2", {\
           "packageLocation": "./.yarn/cache/eventemitter3-npm-3.1.2-a68b03e1ea-81e4e82b84.zip/node_modules/eventemitter3/",\
@@ -11556,6 +11651,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["gatsby-plugin-preact", [\
+        ["npm:6.9.0", {\
+          "packageLocation": "./.yarn/cache/gatsby-plugin-preact-npm-6.9.0-a85e7b424f-7090636681.zip/node_modules/gatsby-plugin-preact/",\
+          "packageDependencies": [\
+            ["gatsby-plugin-preact", "npm:6.9.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.9.0", {\
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-preact-virtual-2786764e75/0/cache/gatsby-plugin-preact-npm-6.9.0-a85e7b424f-7090636681.zip/node_modules/gatsby-plugin-preact/",\
+          "packageDependencies": [\
+            ["gatsby-plugin-preact", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.9.0"],\
+            ["@babel/runtime", "npm:7.17.2"],\
+            ["@gatsbyjs/webpack-hot-middleware", "npm:2.25.2"],\
+            ["@prefresh/babel-plugin", "npm:0.4.3"],\
+            ["@prefresh/webpack", "virtual:2786764e7511624ec3d42a3e42ac09b13c90eef7c05766e684d8fcce799383a761483d35ecf521572ffcf665ee6001b60e5fbded2973428ea33353d0a89967d2#npm:3.3.3"],\
+            ["@types/gatsby", null],\
+            ["@types/preact", null],\
+            ["@types/preact-render-to-string", null],\
+            ["gatsby", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.1"],\
+            ["preact", "npm:10.6.6"],\
+            ["preact-render-to-string", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.1.20"]\
+          ],\
+          "packagePeers": [\
+            "@types/gatsby",\
+            "@types/preact-render-to-string",\
+            "@types/preact",\
+            "gatsby",\
+            "preact-render-to-string",\
+            "preact"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["gatsby-plugin-react-helmet", [\
         ["npm:5.9.0", {\
           "packageLocation": "./.yarn/cache/gatsby-plugin-react-helmet-npm-5.9.0-f2fce70bf3-0f73047aa9.zip/node_modules/gatsby-plugin-react-helmet/",\
@@ -11746,6 +11875,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/gatsby",\
             "gatsby"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["gatsby-plugin-zopfli", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/gatsby-plugin-zopfli-npm-2.0.0-5494957614-0aa2b82e14.zip/node_modules/gatsby-plugin-zopfli/",\
+          "packageDependencies": [\
+            ["gatsby-plugin-zopfli", "npm:2.0.0"],\
+            ["@gfx/zopfli", "npm:1.0.15"],\
+            ["glob", "npm:7.2.0"],\
+            ["mkdirp", "npm:1.0.4"],\
+            ["piscina", "npm:1.6.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12513,14 +12655,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-manifest", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
             ["gatsby-plugin-mdx", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:3.9.0"],\
             ["gatsby-plugin-offline", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
+            ["gatsby-plugin-preact", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.9.0"],\
             ["gatsby-plugin-react-helmet", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
             ["gatsby-plugin-sharp", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
             ["gatsby-plugin-sitemap", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
             ["gatsby-plugin-styled-components", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
+            ["gatsby-plugin-zopfli", "npm:2.0.0"],\
             ["gatsby-remark-autolink-headers", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.9.0"],\
             ["gatsby-remark-images", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.9.0"],\
             ["gatsby-source-filesystem", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
             ["gatsby-transformer-sharp", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.9.0"],\
+            ["preact", "npm:10.6.6"],\
+            ["preact-render-to-string", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.1.20"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:17.0.2"],\
             ["react-helmet", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:6.1.0"],\
@@ -12745,6 +12891,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hast-util-parse-selector", "npm:2.2.5"],\
             ["property-information", "npm:5.6.0"],\
             ["space-separated-tokens", "npm:1.1.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["hdr-histogram-js", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/hdr-histogram-js-npm-1.2.0-dedc114db1-2d871a2d78.zip/node_modules/hdr-histogram-js/",\
+          "packageDependencies": [\
+            ["hdr-histogram-js", "npm:1.2.0"],\
+            ["base64-js", "npm:1.5.1"],\
+            ["pako", "npm:1.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["hdr-histogram-percentiles-obj", [\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/hdr-histogram-percentiles-obj-npm-2.0.1-e0f0112e7e-80f4304764.zip/node_modules/hdr-histogram-percentiles-obj/",\
+          "packageDependencies": [\
+            ["hdr-histogram-percentiles-obj", "npm:2.0.1"],\
+            ["hdr-histogram-js", "npm:1.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15595,6 +15762,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["nice-napi", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/unplugged/nice-napi-npm-1.0.2-693b1680c9/node_modules/nice-napi/",\
+          "packageDependencies": [\
+            ["nice-napi", "npm:1.0.2"],\
+            ["node-addon-api", "npm:3.2.1"],\
+            ["node-gyp", "npm:9.0.0"],\
+            ["node-gyp-build", "npm:4.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["nice-try", [\
         ["npm:1.0.5", {\
           "packageLocation": "./.yarn/cache/nice-try-npm-1.0.5-963856b16f-0b4af3b5bb.zip/node_modules/nice-try/",\
@@ -16693,6 +16872,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["piscina", [\
+        ["npm:1.6.3", {\
+          "packageLocation": "./.yarn/cache/piscina-npm-1.6.3-29134faa16-0bc9ae3cbd.zip/node_modules/piscina/",\
+          "packageDependencies": [\
+            ["piscina", "npm:1.6.3"],\
+            ["eventemitter-asyncresource", "npm:1.0.0"],\
+            ["hdr-histogram-js", "npm:1.2.0"],\
+            ["hdr-histogram-percentiles-obj", "npm:2.0.1"],\
+            ["nice-napi", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["pixelmatch", [\
         ["npm:4.0.2", {\
           "packageLocation": "./.yarn/cache/pixelmatch-npm-4.0.2-03016768a7-9c5c132900.zip/node_modules/pixelmatch/",\
@@ -17569,6 +17761,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["preact", [\
+        ["npm:10.6.6", {\
+          "packageLocation": "./.yarn/cache/preact-npm-10.6.6-69f6e36f09-d6a9581b22.zip/node_modules/preact/",\
+          "packageDependencies": [\
+            ["preact", "npm:10.6.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["preact-render-to-string", [\
+        ["npm:5.1.20", {\
+          "packageLocation": "./.yarn/cache/preact-render-to-string-npm-5.1.20-aa3a3eb1f8-69e3675141.zip/node_modules/preact-render-to-string/",\
+          "packageDependencies": [\
+            ["preact-render-to-string", "npm:5.1.20"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.1.20", {\
+          "packageLocation": "./.yarn/__virtual__/preact-render-to-string-virtual-52f3d8d137/0/cache/preact-render-to-string-npm-5.1.20-aa3a3eb1f8-69e3675141.zip/node_modules/preact-render-to-string/",\
+          "packageDependencies": [\
+            ["preact-render-to-string", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:5.1.20"],\
+            ["@types/preact", null],\
+            ["preact", "npm:10.6.6"],\
+            ["pretty-format", "npm:3.8.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/preact",\
+            "preact"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["prebuild-install", [\
         ["npm:7.0.1", {\
           "packageLocation": "./.yarn/cache/prebuild-install-npm-7.0.1-f63021d62e-117c8966f2.zip/node_modules/prebuild-install/",\
@@ -17625,6 +17849,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-error", "npm:2.1.2"],\
             ["lodash", "npm:4.17.21"],\
             ["renderkid", "npm:2.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["pretty-format", [\
+        ["npm:3.8.0", {\
+          "packageLocation": "./.yarn/cache/pretty-format-npm-3.8.0-293db331d9-21a114d43e.zip/node_modules/pretty-format/",\
+          "packageDependencies": [\
+            ["pretty-format", "npm:3.8.0"]\
           ],\
           "linkType": "HARD"\
         }]\
