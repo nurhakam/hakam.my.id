@@ -5,48 +5,66 @@ import SEO from "../components/SEO";
 
 import "../base.css";
 import hiraganaData from "../utils/hiragana";
+import hiraganaData2 from "../utils/hiragana2";
 
-const Start = styled.button`
+const Home = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+`;
+
+const Start = styled.div`
+  margin: 10% auto;
+`;
+
+const H1 = styled.h1`
+  margin: 0;
+  padding: 30px 60px;
+  line-height: normal;
+  background-color: #f73d7a;
+  color: white;
+  border-radius: 0 0 10px 10px;
+`;
+
+const Level = styled.button`
   display: block;
   background-color: #8383ce;
   color: white;
   border-radius: 10px;
   border: none;
-  margin: 200px auto;
-  padding: 20px 10%;
+  margin: 20px auto;
+  padding: 20px 100px;
 `;
 
 const Container = styled.div`
   display: none;
   flex-direction: column;
   max-width: 900px;
-  padding: 1rem 0 2.5rem 0;
+  padding: 0 0 2.5rem 0;
   margin: auto;
   text-align: center;
   align-items: center;
 `;
 
-const H1 = styled.h1`
-  margin: 0;
-  padding: 15px 30px;
-  line-height: normal;
-  background-color: #f73d7a;
-  color: white;
-  border-radius: 10px;
-`;
-
 const Header = styled.div`
-  border: 2px solid #f7ce3d;
+  border: 2px solid #ffc700;
   width: 60%;
   border-radius: 10px;
   margin-top: 10px;
+  background: #ffc700;
+  color: white;
 `;
 
 const Score = styled.p`
   border-radius: 10px;
   margin: 10px 10px 0 0;
   padding: 8px 12px;
-  border: 2px solid #25bd25;
+  border: 2px solid #2eb72e;
+  background: #2eb72e;
+  color: white;
 `;
 
 const Alert = styled.div`
@@ -64,6 +82,8 @@ const Lv = styled.div`
   border-radius: 10px;
   margin: 10px 10px 0 0;
   border: 2px solid #f73d7a;
+  background: #f73d7a;
+  color: white;
 `;
 
 const Input = styled.input`
@@ -93,11 +113,11 @@ const Row = styled.div`
 `;
 
 const Li = styled.div`
-  padding: 15px 20px;
+  padding: 10px 20px;
   margin: 5px;
   border: 2px solid #f7ce3d;
-  width: 30px;
-  height: 60px;
+  width: 40px;
+  height: 55px;
   border-radius: 10px;
 `;
 
@@ -108,8 +128,12 @@ const Char = styled.div`
 
 export default function Index() {
   const { hiragana } = hiraganaData;
+  const { hiragana2 } = hiraganaData2;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [onlyOnce, setOnce] = useState(false);
+  const [onlyLevel2, setLevel2] = useState(false);
+  const [level, setLevel] = useState("Lv. 1");
+  const [useData, setData] = useState(hiragana);
 
   function shuffle(b) {
     const once = true;
@@ -122,40 +146,50 @@ export default function Index() {
   }
 
   function shiragana() {
-    if (onlyOnce === false) {
-      shuffle(hiragana);
-      document.querySelector(".start").style.display = "none";
-      document.querySelector(".container").style.display = "flex";
-    }
+    setData(hiragana);
+    shuffle(hiragana);
+    document.querySelector(".start").style.display = "none";
+    document.querySelector(".container").style.display = "flex";
+  }
+
+  function naikLevel() {
+    setLevel2(true);
+    setLevel("Lv. 2");
+    setData(hiragana2);
+    shuffle(hiragana2);
+    document.querySelector(".start").style.display = "none";
+    document.querySelector(".container").style.display = "flex";
+    reloadCode()
   }
 
   function validateForm() {
     const x = document.querySelector(".answer").value;
-    const y = hiragana[currentQuestion].char;
+    const z = useData[currentQuestion].char;
+    const y = useData[currentQuestion].unicode;
     const unknown = `unknown${y}`;
     const char = `char${y}`;
-    if (x === y && currentQuestion < 45) {
+    if (x === z && currentQuestion < 45) {
       const nextQuestion = currentQuestion + 1;
       setCurrentQuestion(nextQuestion);
       document.querySelector(".answer").value = "";
-      document.querySelector(`.${y}`).style.border = "2px solid #25bd25";
+      document.querySelector(`.${y}`).style.border = "2px solid #2eb72e";
       document.querySelector(".result").innerHTML = "Benar!";
-      document.querySelector(".result").style.backgroundColor = "#25bd25";
+      document.querySelector(".result").style.backgroundColor = "#2eb72e";
       document.querySelector(`.${y}`).style.display = "block";
       document.querySelector(`.${unknown}`).style.display = "none";
       document.querySelector(`.${char}`).style.display = "block";
     }
-    if (x !== y) {
+    if (x !== z) {
       document.querySelector(".result").innerHTML = "Salah!";
       document.querySelector(".result").style.backgroundColor = "#ff5252";
     }
-    if (x === y && currentQuestion === 45) {
+    if (x === z && currentQuestion === 45) {
       const lastQuestion = currentQuestion;
-      const last = hiragana[lastQuestion].char;
+      const last = useData[lastQuestion].unicode;
       const lastUnknown = `unknown${last}`;
       const lastChar = `char${last}`;
-      document.querySelector(".result").style.backgroundColor = "#25bd25";
-      document.querySelector(`.${last}`).style.border = "2px solid #25bd25";
+      document.querySelector(".result").style.backgroundColor = "#2eb72e";
+      document.querySelector(`.${last}`).style.border = "2px solid #2eb72e";
       document.querySelector(".result").innerHTML = "Selesai!";
       document.querySelector(".answer").style.display = "none";
       document.querySelector(`.${lastUnknown}`).style.display = "none";
@@ -167,7 +201,7 @@ export default function Index() {
 
   function reloadCode() {
     const x = document.querySelector(".answer").value;
-    const y = hiragana[currentQuestion].char;
+    const y = useData[currentQuestion].char;
     let i;
     const list = document.querySelectorAll(".list");
     const char = document.querySelectorAll(".char");
@@ -196,18 +230,25 @@ export default function Index() {
     <>
       <Helmet title="Hiragana Quiz" />
       <SEO />
-      <Start className="start" type="button" onClick={() => shiragana()}>
-        Start!
-      </Start>
-      <Container className="container">
+      <Home>
         <H1>#HiraganaQuiz</H1>
+        <Start className="start">
+          <Level type="button" onClick={() => shiragana()}>
+            Level 1
+          </Level>
+          <Level type="button" onClick={() => naikLevel()}>
+            Level 2
+          </Level>
+        </Start>
+      </Home>
+      <Container className="container">
         <Header>
-          <h2>{hiragana[currentQuestion].unicode}</h2>
+          <h2>{useData[currentQuestion].unicode}</h2>
         </Header>
         <Row>
           <Score>{currentQuestion + 1} / 46</Score>
           <Alert className="result">Silahkan jawab!</Alert>
-          <Lv>Lv. 1</Lv>
+          <Lv>{level}</Lv>
         </Row>
         <Input
           type="text"
@@ -220,12 +261,12 @@ export default function Index() {
           Muat ulang
         </Button>
         <Row>
-          {hiragana.map((hira) => (
-            <Li className={`list ${hira.char}`} key={hira.char}>
+          {useData.map((hira, index) => (
+            <Li className={`list ${hira.unicode}`} key={index}>
               <div>
-                {hira.unicode}
-                <Char className={`char char${hira.char}`}>{hira.char}</Char>
-                <div className={`unknown unknown${hira.char}`}>?</div>
+                <strong>{hira.unicode}</strong>
+                <Char className={`char char${hira.unicode}`}>{hira.char}</Char>
+                <div className={`unknown unknown${hira.unicode}`}>?</div>
               </div>
             </Li>
           ))}

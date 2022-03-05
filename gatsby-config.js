@@ -16,7 +16,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-advanced-sitemap",
+    "gatsby-plugin-complex-sitemap-tree",
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
 
@@ -60,7 +60,8 @@ module.exports = {
       options: {
         name: "Hakam.",
         short_name: "Hakam.",
-        description: "Syaiful Nur Hakam's personal website. A full stack human, doing my best to become better human",
+        description:
+          "Syaiful Nur Hakam's personal website. A full stack human, doing my best to become better human",
         start_url: "/",
         background_color: "white",
         theme_color: "#5183f5",
