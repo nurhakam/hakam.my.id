@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import SEO from "../components/SEO";
 
+import "../base.css";
+
 import hiraganaData from "../utils/hiragana";
 import hiraganaData2 from "../utils/hiragana2";
 
