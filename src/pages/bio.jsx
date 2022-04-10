@@ -96,7 +96,7 @@ export default function Index() {
           </ListItem>
         ))}
         <Footer>
-          Design, code, and written with ❤ | © 2021{" "}
+          Design, code, and written with ❤ | © 2022{" "}
           <a href="/" title="Syaiful Nur Hakam">
             Hakam
           </a>

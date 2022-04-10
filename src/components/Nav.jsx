@@ -45,9 +45,6 @@ const Title = styled(Link)`
     padding-right: 1rem;
   }
 
-  span.title {
-  }
-
   @media only screen and (min-width: 600px) {
     letter-spacing: -1.2px;
   }
