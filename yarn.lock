@@ -2440,7 +2440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/bundler-default@npm:^2.3.1, @parcel/bundler-default@npm:^2.3.2":
+"@parcel/bundler-default@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/bundler-default@npm:2.4.1"
   dependencies:
@@ -2499,7 +2499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/compressor-raw@npm:^2.3.1, @parcel/compressor-raw@npm:^2.3.2":
+"@parcel/compressor-raw@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/compressor-raw@npm:2.4.1"
   dependencies:
@@ -2690,7 +2690,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/namer-default@npm:^2.3.1, @parcel/namer-default@npm:^2.3.2":
+"@parcel/namer-default@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/namer-default@npm:2.4.1"
   dependencies:
@@ -2712,7 +2712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/optimizer-terser@npm:^2.3.1, @parcel/optimizer-terser@npm:^2.3.2":
+"@parcel/optimizer-terser@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/optimizer-terser@npm:2.4.1"
   dependencies:
@@ -2760,7 +2760,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/packager-js@npm:^2.3.1, @parcel/packager-js@npm:^2.3.2":
+"@parcel/packager-js@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/packager-js@npm:2.4.1"
   dependencies:
@@ -2775,7 +2775,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/packager-raw@npm:^2.3.1, @parcel/packager-raw@npm:^2.3.2":
+"@parcel/packager-raw@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/packager-raw@npm:2.4.1"
   dependencies:
@@ -2802,7 +2802,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/reporter-dev-server@npm:^2.3.1, @parcel/reporter-dev-server@npm:^2.3.2":
+"@parcel/reporter-dev-server@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/reporter-dev-server@npm:2.4.1"
   dependencies:
@@ -2812,7 +2812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/resolver-default@npm:^2.3.1, @parcel/resolver-default@npm:^2.3.2":
+"@parcel/resolver-default@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/resolver-default@npm:2.4.1"
   dependencies:
@@ -2822,7 +2822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/runtime-browser-hmr@npm:^2.3.1, @parcel/runtime-browser-hmr@npm:^2.3.2":
+"@parcel/runtime-browser-hmr@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/runtime-browser-hmr@npm:2.4.1"
   dependencies:
@@ -2832,7 +2832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/runtime-js@npm:^2.3.1, @parcel/runtime-js@npm:^2.3.2":
+"@parcel/runtime-js@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/runtime-js@npm:2.4.1"
   dependencies:
@@ -2843,7 +2843,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/runtime-react-refresh@npm:^2.3.1, @parcel/runtime-react-refresh@npm:^2.3.2":
+"@parcel/runtime-react-refresh@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/runtime-react-refresh@npm:2.4.1"
   dependencies:
@@ -2854,7 +2854,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/runtime-service-worker@npm:^2.3.1, @parcel/runtime-service-worker@npm:^2.3.2":
+"@parcel/runtime-service-worker@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/runtime-service-worker@npm:2.4.1"
   dependencies:
@@ -2874,7 +2874,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-js@npm:^2.3.1, @parcel/transformer-js@npm:^2.3.2":
+"@parcel/transformer-js@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/transformer-js@npm:2.4.1"
   dependencies:
@@ -2893,7 +2893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-json@npm:^2.3.1, @parcel/transformer-json@npm:^2.3.2":
+"@parcel/transformer-json@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/transformer-json@npm:2.4.1"
   dependencies:
@@ -2903,7 +2903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-raw@npm:^2.3.1, @parcel/transformer-raw@npm:^2.3.2":
+"@parcel/transformer-raw@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/transformer-raw@npm:2.4.1"
   dependencies:
@@ -2912,7 +2912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-react-refresh-wrap@npm:^2.3.1, @parcel/transformer-react-refresh-wrap@npm:^2.3.2":
+"@parcel/transformer-react-refresh-wrap@npm:^2.3.2":
   version: 2.4.1
   resolution: "@parcel/transformer-react-refresh-wrap@npm:2.4.1"
   dependencies:
@@ -4551,7 +4551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-styled-components@npm:>= 1.12.0, babel-plugin-styled-components@npm:^2.0.6":
+"babel-plugin-styled-components@npm:>= 1.12.0, babel-plugin-styled-components@npm:^2.0.7":
   version: 2.0.7
   resolution: "babel-plugin-styled-components@npm:2.0.7"
   dependencies:
@@ -7942,7 +7942,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:^4.11.2, gatsby-cli@npm:^4.9.0":
+"gatsby-cli@npm:^4.11.2":
   version: 4.11.2
   resolution: "gatsby-cli@npm:4.11.2"
   dependencies:
@@ -8071,33 +8071,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-parcel-config@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "gatsby-parcel-config@npm:0.0.1"
-  dependencies:
-    "@gatsbyjs/parcel-namer-relative-to-cwd": 0.0.2
-    "@parcel/bundler-default": ^2.3.1
-    "@parcel/compressor-raw": ^2.3.1
-    "@parcel/namer-default": ^2.3.1
-    "@parcel/optimizer-terser": ^2.3.1
-    "@parcel/packager-js": ^2.3.1
-    "@parcel/packager-raw": ^2.3.1
-    "@parcel/reporter-dev-server": ^2.3.1
-    "@parcel/resolver-default": ^2.3.1
-    "@parcel/runtime-browser-hmr": ^2.3.1
-    "@parcel/runtime-js": ^2.3.1
-    "@parcel/runtime-react-refresh": ^2.3.1
-    "@parcel/runtime-service-worker": ^2.3.1
-    "@parcel/transformer-js": ^2.3.1
-    "@parcel/transformer-json": ^2.3.1
-    "@parcel/transformer-raw": ^2.3.1
-    "@parcel/transformer-react-refresh-wrap": ^2.3.1
-  peerDependencies:
-    "@parcel/core": ^2.3.1
-  checksum: 8fd226cbf74dc579165b1ec9459fecadbf7cfedae03f10a66e2bc9e6bbdc42fe002a1246023edf91207f56a14ac3c3e338c5acff4ab6d3655d3d893c671dc8e4
-  languageName: node
-  linkType: hard
-
 "gatsby-parcel-config@npm:^0.2.0":
   version: 0.2.0
   resolution: "gatsby-parcel-config@npm:0.2.0"
@@ -8125,7 +8098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-catch-links@npm:^4.9.0":
+"gatsby-plugin-catch-links@npm:^4.11.0":
   version: 4.11.0
   resolution: "gatsby-plugin-catch-links@npm:4.11.0"
   dependencies:
@@ -8151,7 +8124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:^2.9.0":
+"gatsby-plugin-image@npm:^2.11.1":
   version: 2.11.1
   resolution: "gatsby-plugin-image@npm:2.11.1"
   dependencies:
@@ -8179,7 +8152,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:^4.9.0":
+"gatsby-plugin-manifest@npm:^4.11.1":
   version: 4.11.1
   resolution: "gatsby-plugin-manifest@npm:4.11.1"
   dependencies:
@@ -8194,7 +8167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:^3.9.0":
+"gatsby-plugin-mdx@npm:^3.11.1":
   version: 3.11.1
   resolution: "gatsby-plugin-mdx@npm:3.11.1"
   dependencies:
@@ -8246,7 +8219,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^5.9.0":
+"gatsby-plugin-offline@npm:^5.11.1":
   version: 5.11.1
   resolution: "gatsby-plugin-offline@npm:5.11.1"
   dependencies:
@@ -8286,7 +8259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-preact@npm:^6.9.0":
+"gatsby-plugin-preact@npm:^6.11.0":
   version: 6.11.0
   resolution: "gatsby-plugin-preact@npm:6.11.0"
   dependencies:
@@ -8302,7 +8275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-react-helmet@npm:^5.9.0":
+"gatsby-plugin-react-helmet@npm:^5.11.0":
   version: 5.11.0
   resolution: "gatsby-plugin-react-helmet@npm:5.11.0"
   dependencies:
@@ -8314,7 +8287,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^4.9.0":
+"gatsby-plugin-sharp@npm:^4.11.1":
   version: 4.11.1
   resolution: "gatsby-plugin-sharp@npm:4.11.1"
   dependencies:
@@ -8343,7 +8316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:^5.9.0":
+"gatsby-plugin-sitemap@npm:^5.11.1":
   version: 5.11.1
   resolution: "gatsby-plugin-sitemap@npm:5.11.1"
   dependencies:
@@ -8359,7 +8332,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:^5.9.0":
+"gatsby-plugin-styled-components@npm:^5.11.0":
   version: 5.11.0
   resolution: "gatsby-plugin-styled-components@npm:5.11.0"
   dependencies:
@@ -8435,7 +8408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-autolink-headers@npm:^5.9.0":
+"gatsby-remark-autolink-headers@npm:^5.11.1":
   version: 5.11.1
   resolution: "gatsby-remark-autolink-headers@npm:5.11.1"
   dependencies:
@@ -8452,7 +8425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^6.9.0":
+"gatsby-remark-images@npm:^6.11.1":
   version: 6.11.1
   resolution: "gatsby-remark-images@npm:6.11.1"
   dependencies:
@@ -8484,7 +8457,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:^4.9.0":
+"gatsby-source-filesystem@npm:^4.11.1":
   version: 4.11.1
   resolution: "gatsby-source-filesystem@npm:4.11.1"
   dependencies:
@@ -8527,7 +8500,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^4.9.0":
+"gatsby-transformer-sharp@npm:^4.11.0":
   version: 4.11.0
   resolution: "gatsby-transformer-sharp@npm:4.11.0"
   dependencies:
@@ -8556,7 +8529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^4.9.1":
+"gatsby@npm:^4.11.2":
   version: 4.11.2
   resolution: "gatsby@npm:4.11.2"
   dependencies:
@@ -9152,33 +9125,33 @@ __metadata:
     "@mdx-js/react": 1.6.22
     "@prefresh/babel-plugin": ^0.4.3
     "@prefresh/core": ^1.3.4
-    babel-plugin-styled-components: ^2.0.6
-    gatsby: ^4.9.1
-    gatsby-cli: ^4.9.0
-    gatsby-parcel-config: ^0.0.1
-    gatsby-plugin-catch-links: ^4.9.0
+    babel-plugin-styled-components: ^2.0.7
+    gatsby: ^4.11.2
+    gatsby-cli: ^4.11.2
+    gatsby-parcel-config: ^0.2.0
+    gatsby-plugin-catch-links: ^4.11.0
     gatsby-plugin-google-gtag: ^4.11.0
-    gatsby-plugin-image: ^2.9.0
-    gatsby-plugin-manifest: ^4.9.0
-    gatsby-plugin-mdx: ^3.9.0
-    gatsby-plugin-offline: ^5.9.0
-    gatsby-plugin-preact: ^6.9.0
-    gatsby-plugin-react-helmet: ^5.9.0
-    gatsby-plugin-sharp: ^4.9.0
-    gatsby-plugin-sitemap: ^5.9.0
-    gatsby-plugin-styled-components: ^5.9.0
+    gatsby-plugin-image: ^2.11.1
+    gatsby-plugin-manifest: ^4.11.1
+    gatsby-plugin-mdx: ^3.11.1
+    gatsby-plugin-offline: ^5.11.1
+    gatsby-plugin-preact: ^6.11.0
+    gatsby-plugin-react-helmet: ^5.11.0
+    gatsby-plugin-sharp: ^4.11.1
+    gatsby-plugin-sitemap: ^5.11.1
+    gatsby-plugin-styled-components: ^5.11.0
     gatsby-plugin-zopfli: ^2.0.0
-    gatsby-remark-autolink-headers: ^5.9.0
-    gatsby-remark-images: ^6.9.0
-    gatsby-source-filesystem: ^4.9.0
-    gatsby-transformer-sharp: ^4.9.0
-    preact: ^10.6.6
-    preact-render-to-string: ^5.1.20
+    gatsby-remark-autolink-headers: ^5.11.1
+    gatsby-remark-images: ^6.11.1
+    gatsby-source-filesystem: ^4.11.1
+    gatsby-transformer-sharp: ^4.11.0
+    preact: ^10.7.1
+    preact-render-to-string: ^5.1.21
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
     react-is: ^17.0.2
-    styled-components: ^5.3.3
+    styled-components: ^5.3.5
   languageName: unknown
   linkType: soft
 
@@ -13415,7 +13388,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact-render-to-string@npm:^5.1.20":
+"preact-render-to-string@npm:^5.1.21":
   version: 5.1.21
   resolution: "preact-render-to-string@npm:5.1.21"
   dependencies:
@@ -13426,7 +13399,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.6.6":
+"preact@npm:^10.7.1":
   version: 10.7.1
   resolution: "preact@npm:10.7.1"
   checksum: e99d08bd38372e78ce1c84e68685cad66adf076bd95069bc8bcd32c9903a4df09c01d5b04aad849527362b67cc2c09446b647f72de4e67d0578fdea0f904f28f
@@ -15493,7 +15466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^5.3.3":
+"styled-components@npm:^5.3.5":
   version: 5.3.5
   resolution: "styled-components@npm:5.3.5"
   dependencies:

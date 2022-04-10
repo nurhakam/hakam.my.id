@@ -15,8 +15,8 @@ export default {
       link: "/now",
     },
     {
-      title: "Hiragana Quiz",
-      link: "/hiragana",
+      title: "Hiragana/Katakana Quiz",
+      link: "/kana",
     },
   ],
   bioExternal: [

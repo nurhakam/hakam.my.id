@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-styled-components", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:2.0.7"],\
             ["gatsby", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.11.2"],\
             ["gatsby-cli", "npm:4.11.2"],\
-            ["gatsby-parcel-config", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.0.1"],\
+            ["gatsby-parcel-config", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.2.0"],\
             ["gatsby-plugin-catch-links", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.11.0"],\
             ["gatsby-plugin-google-gtag", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.11.0"],\
             ["gatsby-plugin-image", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:2.11.1"],\
@@ -2672,10 +2672,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:101347fec43cd791f14be9b40771605839ec438d5c9b341e648eb6344b6a50c73ff88918469c09963a4b6ba97101a2730b4c4d6fbf6ccf1b785aa3a746a55ddf#npm:0.0.2", {\
-          "packageLocation": "./.yarn/__virtual__/@gatsbyjs-parcel-namer-relative-to-cwd-virtual-4059f7694e/0/cache/@gatsbyjs-parcel-namer-relative-to-cwd-npm-0.0.2-547a19999a-de24ce1f08.zip/node_modules/@gatsbyjs/parcel-namer-relative-to-cwd/",\
+        ["virtual:a68e09ebba0cb75f1b4df26bc1e04940106d54409ece6e77ac3c2a7a24634728c4dcb995c56e1e8c75a955feffd17beb487f9f8d0e7723f00b46d142b171ea11#npm:0.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@gatsbyjs-parcel-namer-relative-to-cwd-virtual-e68621318c/0/cache/@gatsbyjs-parcel-namer-relative-to-cwd-npm-0.0.2-547a19999a-de24ce1f08.zip/node_modules/@gatsbyjs/parcel-namer-relative-to-cwd/",\
           "packageDependencies": [\
-            ["@gatsbyjs/parcel-namer-relative-to-cwd", "virtual:101347fec43cd791f14be9b40771605839ec438d5c9b341e648eb6344b6a50c73ff88918469c09963a4b6ba97101a2730b4c4d6fbf6ccf1b785aa3a746a55ddf#npm:0.0.2"],\
+            ["@gatsbyjs/parcel-namer-relative-to-cwd", "virtual:a68e09ebba0cb75f1b4df26bc1e04940106d54409ece6e77ac3c2a7a24634728c4dcb995c56e1e8c75a955feffd17beb487f9f8d0e7723f00b46d142b171ea11#npm:0.0.2"],\
             ["@babel/runtime", "npm:7.17.9"],\
             ["@parcel/namer-default", "npm:2.4.1"],\
             ["@parcel/plugin", "npm:2.3.1"],\
@@ -11369,13 +11369,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["gatsby-parcel-config", [\
-        ["npm:0.0.1", {\
-          "packageLocation": "./.yarn/cache/gatsby-parcel-config-npm-0.0.1-3e6b748232-8fd226cbf7.zip/node_modules/gatsby-parcel-config/",\
-          "packageDependencies": [\
-            ["gatsby-parcel-config", "npm:0.0.1"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["npm:0.2.0", {\
           "packageLocation": "./.yarn/cache/gatsby-parcel-config-npm-0.2.0-69c194ca5d-4b1a33bfcf.zip/node_modules/gatsby-parcel-config/",\
           "packageDependencies": [\
@@ -11383,11 +11376,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/gatsby-parcel-config-virtual-101347fec4/0/cache/gatsby-parcel-config-npm-0.0.1-3e6b748232-8fd226cbf7.zip/node_modules/gatsby-parcel-config/",\
+        ["virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/gatsby-parcel-config-virtual-a68e09ebba/0/cache/gatsby-parcel-config-npm-0.2.0-69c194ca5d-4b1a33bfcf.zip/node_modules/gatsby-parcel-config/",\
           "packageDependencies": [\
-            ["gatsby-parcel-config", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.0.1"],\
-            ["@gatsbyjs/parcel-namer-relative-to-cwd", "virtual:101347fec43cd791f14be9b40771605839ec438d5c9b341e648eb6344b6a50c73ff88918469c09963a4b6ba97101a2730b4c4d6fbf6ccf1b785aa3a746a55ddf#npm:0.0.2"],\
+            ["gatsby-parcel-config", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.2.0"],\
+            ["@gatsbyjs/parcel-namer-relative-to-cwd", "virtual:a68e09ebba0cb75f1b4df26bc1e04940106d54409ece6e77ac3c2a7a24634728c4dcb995c56e1e8c75a955feffd17beb487f9f8d0e7723f00b46d142b171ea11#npm:0.0.2"],\
             ["@parcel/bundler-default", "npm:2.4.1"],\
             ["@parcel/compressor-raw", "npm:2.4.1"],\
             ["@parcel/core", null],\
@@ -11417,7 +11410,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/gatsby-parcel-config-virtual-39760ff8dc/0/cache/gatsby-parcel-config-npm-0.2.0-69c194ca5d-4b1a33bfcf.zip/node_modules/gatsby-parcel-config/",\
           "packageDependencies": [\
             ["gatsby-parcel-config", "virtual:d75ac9d34f45297ecb07fdfd2f6c167297f2fa37f322e7824cd0b430b5529a38b39b51298451150035113feab9db296f3eba028869239d90de5b0bc051306adc#npm:0.2.0"],\
-            ["@gatsbyjs/parcel-namer-relative-to-cwd", "virtual:101347fec43cd791f14be9b40771605839ec438d5c9b341e648eb6344b6a50c73ff88918469c09963a4b6ba97101a2730b4c4d6fbf6ccf1b785aa3a746a55ddf#npm:0.0.2"],\
+            ["@gatsbyjs/parcel-namer-relative-to-cwd", "virtual:a68e09ebba0cb75f1b4df26bc1e04940106d54409ece6e77ac3c2a7a24634728c4dcb995c56e1e8c75a955feffd17beb487f9f8d0e7723f00b46d142b171ea11#npm:0.0.2"],\
             ["@parcel/bundler-default", "npm:2.4.1"],\
             ["@parcel/compressor-raw", "npm:2.4.1"],\
             ["@parcel/core", "npm:2.4.1"],\
@@ -12746,7 +12739,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-styled-components", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:2.0.7"],\
             ["gatsby", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.11.2"],\
             ["gatsby-cli", "npm:4.11.2"],\
-            ["gatsby-parcel-config", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.0.1"],\
+            ["gatsby-parcel-config", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:0.2.0"],\
             ["gatsby-plugin-catch-links", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.11.0"],\
             ["gatsby-plugin-google-gtag", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:4.11.0"],\
             ["gatsby-plugin-image", "virtual:4567dbc8e2f70bcb9bd36fa5bf05e0e738ae9bb3117967444337f7250847699cdc71b084b3d7c148f9f7f19615564eb997f0851adc8cd8809a6cc69e4f397eee#npm:2.11.1"],\
