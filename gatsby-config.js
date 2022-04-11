@@ -88,7 +88,6 @@ module.exports = {
          },
       },
     },
-    
     {
       resolve: `gatsby-plugin-segment-js`,
       options: {
@@ -110,6 +109,13 @@ module.exports = {
         // number (defaults to 50); time to wait after a route update before it should
         // track the page change, to implement this, make sure your `trackPage` property is set to `true`
         trackPageDelay: 10,
+  
+        // If you need to proxy events through a custom endpoint,
+        // add a `host` property (defaults to https://cdn.segment.io)
+        // Segment docs:
+        //   - https://segment.com/docs/connections/sources/custom-domains
+        //   - https://segment.com/docs/connections/sources/catalog/libraries/website/javascript/#proxy
+        host: 'https://override-segment-endpoint',
   
         // boolean (defaults to false); whether to delay load Segment
         // ADVANCED FEATURE: only use if you leverage client-side routing (ie, Gatsby <Link>)
