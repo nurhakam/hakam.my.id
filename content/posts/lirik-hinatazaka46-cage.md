@@ -10,8 +10,8 @@ tags:
 
 Lirik lagu **Cage** oleh **Hinatazaka46** terjemahan Bahasa Indonesia. _Cage_ adalah salah satu lagu dalam track single ke-2 Hinatazaka46 (Doremisolasido). Lagu ini dinyanyikan oleh 4 member Hinatazaka46 (_ex Hiragana Keyakizaka46_) yaitu Higashimura Mei, Kanemura Miku, Kawata Hina, dan Nibu Akari. Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
-	<img src="../images/hinatazaka46-2nd-single-doremisolasido.jpg" alt="Hinatazaka46 2nd Single Doremisolasido"/>
+<div class="cdcover">
+ <img src="../images/hinatazaka46-2nd-single-doremisolasido.jpg" alt="Hinatazaka46 2nd Single Doremisolasido"/>
 </div>
 
 - Judul : **Cage** (Sangkar)

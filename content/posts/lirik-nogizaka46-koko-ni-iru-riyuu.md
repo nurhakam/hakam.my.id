@@ -10,8 +10,8 @@ tags:
 
 Lirik lagu **Koko ni Iru Riyuu** oleh **Nogizaka46** terjemahan Bahasa Indonesia. _Koko ni Iru Riyuu_ adalah lagu coupling single ke-9 Nogizaka46 (Natsu no Free & Easy) yang dibawakan oleh Under Members. Lagu ini juga masuk ke dalam track album ke-4 Nogizaka46 (Boku Dake no Kimi ~Under Super Best~). Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
-	<img src="../images/nogizaka46-9th-single-type-c.jpg" alt="Nogizaka46 9th Single Type C"/>
+<div class="cdcover">
+ <img src="../images/nogizaka46-9th-single-type-c.jpg" alt="Nogizaka46 9th Single Type C"/>
 </div>
 
 - Judul : **ここにいる理由** (_Koko ni Iru Riyuu_ / Alasan Untuk Berada Disini)

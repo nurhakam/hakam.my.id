@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Helmet from "react-helmet";
 import styled from "styled-components";
 import SEO from "../components/SEO";
 
@@ -69,8 +68,6 @@ export default function Index() {
 
   return (
     <>
-      <Helmet title={`Linktree | ${config.siteTitle}`} />
-      <SEO />
       <Container>
         <Logo>
           <img src={`${config.profile}`} alt="Logo" />
@@ -105,3 +102,8 @@ export default function Index() {
     </>
   );
 }
+
+export const Head = () => 
+  <SEO 
+    customTitle="Linktree">
+  </SEO>

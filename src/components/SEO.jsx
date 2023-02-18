@@ -1,13 +1,12 @@
 import React from "react";
-import Helmet from "react-helmet";
-
 import config from "../utils/config";
 
-export default function SEO_Component({
+export default function SEO ({
   postNode,
   postPath,
   postSEO,
   customDescription,
+  customTitle,
 }) {
   let title;
   let description;
@@ -16,7 +15,7 @@ export default function SEO_Component({
 
   if (postSEO) {
     const postMeta = postNode.frontmatter;
-    title = postMeta.title;
+    title = `${postMeta.title} | ${config.siteTitle}`;
     description = postMeta.description || postNode.excerpt;
 
     if (postMeta.thumbnail) {
@@ -24,8 +23,14 @@ export default function SEO_Component({
     }
 
     postURL = `${config.siteUrl}${postPath}`;
-  } else {
-    title = config.siteTitle;
+  } 
+
+  else if (customTitle) {
+    title = `${customTitle} | ${config.siteTitle}`;
+  }
+  
+  else {
+    title = `${config.siteTitle} – Full Stack Human`;
     description = customDescription || config.description;
   }
 
@@ -73,7 +78,7 @@ export default function SEO_Component({
     );
   }
   return (
-    <Helmet>
+    <>
       <html lang="en" />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
@@ -93,6 +98,7 @@ export default function SEO_Component({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-    </Helmet>
+      <title>{title}</title>
+    </>
   );
 }

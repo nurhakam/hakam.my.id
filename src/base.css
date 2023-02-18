@@ -224,8 +224,8 @@ tbody tr:nth-child(even) {
 }
 
 .cdcover {
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   max-width: 400px;
   padding-bottom: 1rem;
 }

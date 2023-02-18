@@ -10,8 +10,8 @@ tags:
 
 Lirik lagu **Sonna Koto Nai yo** oleh **Hinatazaka46** terjemahan Bahasa Indonesia. _Sonna Koto Nai yo_ adalah lagu utama single ke-4 Hinatazaka46 (Sonna Koto Nai yo). Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
-	<img src="../images/hinatazaka46-4th-single-type-a.jpg" alt="Hinatazaka46 4th Single Limited Edition Type A"/>
+<div class="cdcover">
+ <img src="../images/hinatazaka46-4th-single-type-a.jpg" alt="Hinatazaka46 4th Single Limited Edition Type A"/>
 </div>
 
 - Judul : **ソンナコトナイヨ** (_Sonna Koto Nai yo_ / Itu Tidak Benar)

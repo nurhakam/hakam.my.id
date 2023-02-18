@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
@@ -19,8 +18,6 @@ const BigText = styled.div`
 export default function Index() {
   return (
     <Layout>
-      <Helmet title="404 – Page Not Found" />
-      <SEO />
       <Container>
         <BigText>404</BigText>
         <p>
@@ -31,3 +28,8 @@ export default function Index() {
     </Layout>
   );
 }
+
+export const Head = () => 
+  <SEO 
+    customTitle= "404 – Page Not Found">
+  </SEO>

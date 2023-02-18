@@ -3,7 +3,7 @@ export default {
   siteUrl: "https://hakam.my.id",
   siteLogo: "/logo.png",
   description:
-    "Syaiful Nur Hakam is an Undergraduate Student of Japanese Literature Studies at Brawijaya University. This is his personal website that capture his strange interest in web development. Combined with his other weird and seemingly random hobby, this website is somewhat the essence of his digital presence. While it maybe can not be conveyed correctly, he aspire to be full stack human. Kindly take it as it is, because he will not ellaborate more. &copy; 2022.",
+    "Syaiful Nur Hakam is an Undergraduate Student of Japanese Literature Studies at Brawijaya University. This is his personal website that capture his strange interest in web development. Combined with his other weird and seemingly random hobby, this website is somewhat the essence of his digital presence. While it maybe can not be conveyed correctly, he aspire to be full stack human. Kindly take it as it is, because he will not ellaborate more. &copy; 2023.",
   profile: "/profile.jpg",
   bio: [
     {
@@ -16,7 +16,7 @@ export default {
     },
     {
       title: "Hiragana/Katakana Quiz",
-      link: "/kana",
+      link: "/hiragana",
     },
   ],
   bioExternal: [
@@ -26,7 +26,7 @@ export default {
     },
     {
       title: "Instagram",
-      link: "https://www.instagram.com/syaifulnurh/",
+      link: "https://www.instagram.com/hakamatsuri/",
     },
     {
       title: "LinkedIn",

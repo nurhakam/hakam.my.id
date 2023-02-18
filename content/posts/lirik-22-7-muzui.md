@@ -10,8 +10,8 @@ tags:
 
 Lirik lagu **Muzui** oleh **22/7** (_Nanabun no Nijyuuni_) terjemahan Bahasa Indonesia. _Muzui_ adalah lagu utama single ke-5 Nanabun no Nijyuuni (Muzui). Lagu ini menjadi opening theme anime 22/7 yang tayang 11 Januari 2020. Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
-	<img src="../images/22-7-5th-single-type-a.jpg" alt="22/7 5th Single Limited Edition Type A"/>
+<div class="cdcover">
+ <img src="../images/22-7-5th-single-type-a.jpg" alt="22/7 5th Single Limited Edition Type A"/>
 </div>
 
 - Judul : **ムズイ** (_Muzui_ / Sulit)

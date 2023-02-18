@@ -44,7 +44,7 @@ export default function Footer() {
           GitHub
         </FooterItem>
         <FooterItem
-          href="https://instagram.com/syaifulnurh"
+          href="https://instagram.com/hakamatsuri"
           title="See my Instagram profile"
           target="_blank"
           rel="noopener noreferrer"
@@ -62,7 +62,7 @@ export default function Footer() {
       </div>
       <CreditContainer>
         <p>
-          Design, code, and written with ❤ | © 2022{" "}
+          {`Design, code, and written with ❤ | © ${new Date().getFullYear()} `}
           <a href="/" title="Syaiful Nur Hakam">
             Hakam
           </a>

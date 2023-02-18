@@ -10,7 +10,7 @@ tags:
 
 Lirik lagu **Aoi Remon** oleh **STU48** terjemahan Bahasa Indonesia. _Aoi remon_ adalah lagu coupling single ke-3 STU48 (Daisuki na Hito). Lagu ini masuk ke dalam track CD Theater Edition dan dinyanyikan oleh 3 member STU48 yaitu Okada Nana, Kadowaki Miyuna, dan Yano Honoka. Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
+<div class="cdcover">
     <img src="../images/stu-3rd-single-theater-edition.jpg" alt="STU48 3rd Single Theater Edition"/>
 </div>
 

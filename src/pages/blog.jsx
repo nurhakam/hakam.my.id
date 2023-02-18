@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Lists from "../components/Lists";
@@ -7,12 +6,9 @@ import SEO from "../components/SEO";
 
 export default function Index({ data }) {
   const posts = data.posts.edges; // from the graphql query below
-  const siteTitle = data.site.siteMetadata.title; // from the graphql query below
 
   return (
     <Layout>
-      <Helmet title={`Articles | ${siteTitle}`} />
-      <SEO />
       <Lists posts={posts} />
     </Layout>
   );
@@ -25,9 +21,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    posts: allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
+    posts: allMarkdownRemark(
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {template: {eq: "post"}}}
     ) {
       edges {
         node {
@@ -46,3 +42,8 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => 
+  <SEO
+    customTitle="Articles">
+  </SEO>

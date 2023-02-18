@@ -1,7 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-import Helmet from "react-helmet";
 import styled from "styled-components";
 
 import Layout from "../components/Layout";
@@ -40,17 +38,18 @@ const H1 = styled.h1`
 `;
 
 export default function PageTemplate({ data }) {
-  const post = data.mdx; // from the graphql query below
+  const post = data.markdownRemark; // from the graphql query below
 
   return (
     <Layout>
-      <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-      <SEO />
       <ArticleContainer>
         <ArticleHeader>
           <H1>{post.frontmatter.title}</H1>
         </ArticleHeader>
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <div
+                className="post-content"
+                dangerouslySetInnerHTML={{ __html: post.html }}
+              />
       </ArticleContainer>
     </Layout>
   );
@@ -58,11 +57,21 @@ export default function PageTemplate({ data }) {
 
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      body
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        slug
+      }
       frontmatter {
         title
       }
     }
   }
 `;
+
+export const Head = ({ data }) => 
+  <SEO 
+    postPath={data.markdownRemark.fields.slug} 
+    postNode={data.markdownRemark} 
+    postSEO >
+  </SEO>

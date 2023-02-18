@@ -1,19 +1,21 @@
-Hi there 👋
+Hey there 👋 welcome to my personal website!
 
-My name is Syaiful Nur Hakam. I am a first-year Japanese Literature student at Brawijaya University and a passionate learner. I update the [now](/now) page regularly and write a glimpse about what I'm currently up to in there.
+I'm **Syaiful Nur Hakam**, a second-year Japanese Literature student at Brawijaya University who loves to learn and explore new things. I write my life update on the [now](/now) page every once in a while, you can see a glimpse of what I'm currently up to in there.
 
-This website is my personal space (some sort of digital garden) where I drop draft, notes, and article in things I'm interested in. Mostly, it will capture thoughts I have about learning foreign language, philosophy, writing, web development, and my endless curiosity with Japanese culture.
+As I continue on this journey, I like to share my thoughts and experiences on my personal website, which I like to think of as my digital garden. It's a space where I can drop my drafts, notes, and articles about the things that interest me the most, including foreign language learning (especially English and Japanese), culture,  philosophy, writing, web development (HTML, CSS, JavaScript, React, Node), and society in general.
 
-I found the idea of a blog without a publish button interesting. A concept to write entries that aren't all complete thoughts and open to edit or add things later on. In a sense, each entry become living being that capture how the thought is evolving over time.
+One thing that I find particularly interesting is the idea of a blog without a publish button. This means that I can write entries that aren't necessarily complete thoughts and leave them open for editing or adding to later on. In this way, each entry becomes a living being that captures how my thoughts are evolving over time.
 
-If you'd like to get in touch with me, [email](mailto:say.hi@hakam.my.id) are your best channels. You can also DM me in [instagram](https://www.instagram.com/syaifulnurh/).
+When it comes to foreign languages, I am particularly interested in English and Japanese. I am always looking for new ways to improve my language skills, whether it's through reading, writing, listening, or speaking. I believe that learning a foreign language can not only help us communicate with people from different cultures but also broaden our perspectives and understanding of the world.
 
-Please feel free to share and let me know if you like something you read here. It's always nice to get feedback.
+Philosophy is another area that fascinates me. I enjoy contemplating the big questions, such as the meaning of life, the nature of reality, and the purpose of human existence. It's a never-ending journey of self-discovery and enlightenment that I find incredibly rewarding.
+
+If you'd like to get in touch with me, [email](mailto:say.hi@hakam.my.id) are your best channels. You can also DM me on [Instagram](https://www.instagram.com/hakamatsuri/).Please feel free to share and let me know if you enjoy reading my articles. I would love to hear your feedback and thoughts.
 
 ### Some Personal Favorites
 
-- [Time when human is lost and discovered it again accidentally](/#) coming soon!
-- 🌱 [We are part of the environment](/#) coming soon!
+- [Humanity's Search for Meaning and Purpose Throughout Time](/rediscovering-humanitys-search-for-meaning-and-purpose-throughout-time/)
+- 🌱 [We are Part of The Environment](/we-are-part-of-the-environment/)
 - [Life plan A and B](/#) coming soon!
 - [Absurdity, Zen, and Stoic](/#) coming soon!
 - [Being storyteller, a blessed way to life](/#) coming soon!

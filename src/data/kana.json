@@ -1,0 +1,613 @@
+[{
+    "spelling": "a",
+    "hiragana": "\u3042",
+    "katakana": "\u30a2",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "i",
+    "hiragana": "\u3044",
+    "katakana": "\u30a4",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "u",
+    "hiragana": "\u3046",
+    "katakana": "\u30a6",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "e",
+    "hiragana": "\u3048",
+    "katakana": "\u30a8",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "o",
+    "hiragana": "\u304a",
+    "katakana": "\u30aa",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ka",
+    "hiragana": "\u304b",
+    "katakana": "\u30ab",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ki",
+    "hiragana": "\u304d",
+    "katakana": "\u30ad",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ku",
+    "hiragana": "\u304f",
+    "katakana": "\u30af",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ke",
+    "hiragana": "\u3051",
+    "katakana": "\u30b1",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ko",
+    "hiragana": "\u3053",
+    "katakana": "\u30b3",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "sa",
+    "hiragana": "\u3055",
+    "katakana": "\u30b5",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "shi",
+    "hiragana": "\u3057",
+    "katakana": "\u30b7",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "su",
+    "hiragana": "\u3059",
+    "katakana": "\u30b9",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "se",
+    "hiragana": "\u305b",
+    "katakana": "\u30bb",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "so",
+    "hiragana": "\u305d",
+    "katakana": "\u30bd",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ta",
+    "hiragana": "\u305f",
+    "katakana": "\u30bf",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "chi",
+    "hiragana": "\u3061",
+    "katakana": "\u30c1",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "tsu",
+    "hiragana": "\u3064",
+    "katakana": "\u30c4",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "te",
+    "hiragana": "\u3066",
+    "katakana": "\u30c6",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "to",
+    "hiragana": "\u3068",
+    "katakana": "\u30c8",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "na",
+    "hiragana": "\u306a",
+    "katakana": "\u30ca",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ni",
+    "hiragana": "\u306b",
+    "katakana": "\u30cb",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "nu",
+    "hiragana": "\u306c",
+    "katakana": "\u30cc",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ne",
+    "hiragana": "\u306d",
+    "katakana": "\u30cd",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "no",
+    "hiragana": "\u306e",
+    "katakana": "\u30ce",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ha",
+    "hiragana": "\u306f",
+    "katakana": "\u30cf",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "hi",
+    "hiragana": "\u3072",
+    "katakana": "\u30d2",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "fu",
+    "hiragana": "\u3075",
+    "katakana": "\u30d5",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "he",
+    "hiragana": "\u3078",
+    "katakana": "\u30d8",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ho",
+    "hiragana": "\u307b",
+    "katakana": "\u30db",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ma",
+    "hiragana": "\u307e",
+    "katakana": "\u30de",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "mi",
+    "hiragana": "\u307f",
+    "katakana": "\u30df",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "mu",
+    "hiragana": "\u3080",
+    "katakana": "\u30e0",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "me",
+    "hiragana": "\u3081",
+    "katakana": "\u30e1",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "mo",
+    "hiragana": "\u3082",
+    "katakana": "\u30e2",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ya",
+    "hiragana": "\u3084",
+    "katakana": "\u30e4",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "yu",
+    "hiragana": "\u3086",
+    "katakana": "\u30e6",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "yo",
+    "hiragana": "\u3088",
+    "katakana": "\u30e8",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ra",
+    "hiragana": "\u3089",
+    "katakana": "\u30e9",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ri",
+    "hiragana": "\u308a",
+    "katakana": "\u30ea",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ru",
+    "hiragana": "\u308b",
+    "katakana": "\u30eb",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "re",
+    "hiragana": "\u308c",
+    "katakana": "\u30ec",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ro",
+    "hiragana": "\u308d",
+    "katakana": "\u30ed",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "wa",
+    "hiragana": "\u308f",
+    "katakana": "\u30ef",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "wo",
+    "hiragana": "\u3092",
+    "katakana": "\u30f2",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "n",
+    "hiragana": "\u3093",
+    "katakana": "\u30f3",
+    "type" : "gojuuon"
+},
+{
+    "spelling": "ga",
+    "hiragana": "\u304c",
+    "katakana": "\u30ac",
+    "type" : "dakuon"
+},
+{
+    "spelling": "gi",
+    "hiragana": "\u304e",
+    "katakana": "\u30ae",
+    "type" : "dakuon"
+},
+{
+    "spelling": "gu",
+    "hiragana": "\u3050",
+    "katakana": "\u30b0",
+    "type" : "dakuon"
+},
+{
+    "spelling": "ge",
+    "hiragana": "\u3052",
+    "katakana": "\u30b2",
+    "type" : "dakuon"
+},
+{
+    "spelling": "go",
+    "hiragana": "\u3054",
+    "katakana": "\u30b4",
+    "type" : "dakuon"
+},
+{
+    "spelling": "za",
+    "hiragana": "\u3056",
+    "katakana": "\u30b6",
+    "type" : "dakuon"
+},
+{
+    "spelling": "ji",
+    "hiragana": "\u3062",
+    "katakana": "\u30b8",
+    "type" : "dakuon"
+},
+{
+    "spelling": "zu",
+    "hiragana": "\u3065",
+    "katakana": "\u30ba",
+    "type" : "dakuon"
+},
+{
+    "spelling": "ze",
+    "hiragana": "\u305c",
+    "katakana": "\u30bc",
+    "type" : "dakuon"
+},
+{
+    "spelling": "zo",
+    "hiragana": "\u305e",
+    "katakana": "\u30be",
+    "type" : "dakuon"
+},
+{
+    "spelling": "da",
+    "hiragana": "\u3060",
+    "katakana": "\u30c0",
+    "type" : "dakuon"
+},
+{
+    "spelling": "de",
+    "hiragana": "\u3067",
+    "katakana": "\u30c7",
+    "type" : "dakuon"
+},
+{
+    "spelling": "do",
+    "hiragana": "\u3069",
+    "katakana": "\u30c9",
+    "type" : "dakuon"
+},
+{
+    "spelling": "ba",
+    "hiragana": "\u3070",
+    "katakana": "\u30d0",
+    "type" : "dakuon"
+},
+{
+    "spelling": "bi",
+    "hiragana": "\u3073",
+    "katakana": "\u30d3",
+    "type" : "dakuon"
+},
+{
+    "spelling": "bu",
+    "hiragana": "\u3076",
+    "katakana": "\u30d6",
+    "type" : "dakuon"
+},
+{
+    "spelling": "be",
+    "hiragana": "\u3079",
+    "katakana": "\u30d9",
+    "type" : "dakuon"
+},
+{
+    "spelling": "bo",
+    "hiragana": "\u307c",
+    "katakana": "\u30dc",
+    "type" : "dakuon"
+},
+{
+    "spelling": "pa",
+    "hiragana": "\u3071",
+    "katakana": "\u30d1",
+    "type" : "handakuon"
+},
+{
+    "spelling": "pi",
+    "hiragana": "\u3074",
+    "katakana": "\u30d4",
+    "type" : "handakuon"
+},
+{
+    "spelling": "pu",
+    "hiragana": "\u3077",
+    "katakana": "\u30d7",
+    "type" : "handakuon"
+},
+{
+    "spelling": "pe",
+    "hiragana": "\u307a",
+    "katakana": "\u30da",
+    "type" : "handakuon"
+},
+{
+    "spelling": "po",
+    "hiragana": "\u307d",
+    "katakana": "\u30dd",
+    "type" : "handakuon"
+},
+{
+    "spelling": "kya",
+    "hiragana": "\u304d\u3083",
+    "katakana": "\u30ad\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "kyu",
+    "hiragana": "\u304d\u3085",
+    "katakana": "\u30ad\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "kyo",
+    "hiragana": "\u304d\u3087",
+    "katakana": "\u30ad\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "gya",
+    "hiragana": "\u304e\u3083",
+    "katakana": "\u30ae\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "gyu",
+    "hiragana": "\u304e\u3085",
+    "katakana": "\u30ae\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "gyo",
+    "hiragana": "\u304e\u3087",
+    "katakana": "\u30ae\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "sha",
+    "hiragana": "\u3057\u3083",
+    "katakana": "\u30b7\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "shu",
+    "hiragana": "\u3057\u3085",
+    "katakana": "\u30b7\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "sho",
+    "hiragana": "\u3057\u3087",
+    "katakana": "\u30b7\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "ja",
+    "hiragana": "\u3058\u3083",
+    "katakana": "\u30b8\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "ju",
+    "hiragana": "\u3058\u3085",
+    "katakana": "\u30b8\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "jo",
+    "hiragana": "\u3058\u3087",
+    "katakana": "\u30b8\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "cha",
+    "hiragana": "\u3061\u3083",
+    "katakana": "\u30c1\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "chu",
+    "hiragana": "\u3061\u3085",
+    "katakana": "\u30c1\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "cho",
+    "hiragana": "\u3061\u3087",
+    "katakana": "\u30c1\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "nya",
+    "hiragana": "\u306b\u3083",
+    "katakana": "\u30cb\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "nyu",
+    "hiragana": "\u306b\u3085",
+    "katakana": "\u30cb\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "nyo",
+    "hiragana": "\u306b\u3087",
+    "katakana": "\u30cb\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "hya",
+    "hiragana": "\u3072\u3083",
+    "katakana": "\u30d2\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "hyu",
+    "hiragana": "\u3072\u3085",
+    "katakana": "\u30d2\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "hyo",
+    "hiragana": "\u3072\u3087",
+    "katakana": "\u30d2\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "bya",
+    "hiragana": "\u3073\u3083",
+    "katakana": "\u30d3\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "byu",
+    "hiragana": "\u3073\u3085",
+    "katakana": "\u30d3\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "byo",
+    "hiragana": "\u3073\u3087",
+    "katakana": "\u30d3\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "pya",
+    "hiragana": "\u3074\u3083",
+    "katakana": "\u30d4\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "pyu",
+    "hiragana": "\u3074\u3085",
+    "katakana": "\u30d4\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "pyo",
+    "hiragana": "\u3074\u3087",
+    "katakana": "\u30d4\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "mya",
+    "hiragana": "\u307f\u3083",
+    "katakana": "\u30df\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "myu",
+    "hiragana": "\u307f\u3085",
+    "katakana": "\u30df\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "myo",
+    "hiragana": "\u307f\u3087",
+    "katakana": "\u30df\u30e7",
+    "type" : "youon"
+},
+{
+    "spelling": "rya",
+    "hiragana": "\u308a\u3083",
+    "katakana": "\u30ea\u30e3",
+    "type" : "youon"
+},
+{
+    "spelling": "ryu",
+    "hiragana": "\u308a\u3085",
+    "katakana": "\u30c1\u30e5",
+    "type" : "youon"
+},
+{
+    "spelling": "ryo",
+    "hiragana": "\u308a\u3087",
+    "katakana": "\u30ea\u30e7",
+    "type" : "youon"
+}
+]

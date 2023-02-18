@@ -1,7 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
@@ -13,15 +11,15 @@ const Container = styled.div`
 `;
 
 export default function Index({ data }) {
-  const siteTitle = data.site.siteMetadata.title; // from the graphql query below
   const home = data.home.edges[0].node; // from the graphql query below
 
   return (
     <Layout>
-      <Helmet title={`${siteTitle} – Full Stack Human`} />
-      <SEO />
       <Container>
-        <MDXRenderer>{home.body}</MDXRenderer>
+      <div
+                className="post-content"
+                dangerouslySetInnerHTML={{ __html: home.html }}
+              />
       </Container>
     </Layout>
   );
@@ -29,17 +27,16 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    home: allMdx(filter: { fileAbsolutePath: { regex: "/home/" } }) {
+    home: allMarkdownRemark(filter: {fields: {slug: {regex: "/home/"}}}) {
       edges {
         node {
-          body
+          html
         }
       }
     }
   }
 `;
+
+export const Head = () => 
+  <SEO>
+  </SEO>

@@ -1,12 +1,9 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import SEO from "../components/SEO";
-import config from "../utils/config";
 
 const ArticleContainer = styled.section`
   padding: 0 1.5rem;
@@ -59,13 +56,11 @@ const PostInfo = styled.div`
   }
 `;
 
-export default function PostTemplate({ data }) {
-  const post = data.mdx; // from the graphql query below
+export default function PostTemplate({data}) {
+  const post = data.markdownRemark; // from the graphql query below
 
   return (
     <Layout>
-      <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-      <SEO postPath={post.fields.slug} postNode={post} postSEO />
       <ArticleContainer>
         <ArticleHeader>
           <H1>{`${post.frontmatter.title}`}</H1>
@@ -77,30 +72,35 @@ export default function PostTemplate({ data }) {
             </time>
           </PostInfo>
         </ArticleHeader>
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <div
+                className="post-content"
+                dangerouslySetInnerHTML={{ __html: post.html }}
+              />
       </ArticleContainer>
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      body
-      excerpt(pruneLength: 180)
-      frontmatter {
-        title
-        date(formatString: "MMM DD, YYYY")
-        tags
-        thumbnail {
-          childImageSharp {
-            gatsbyImageData(layout: FIXED)
-          }
-        }
-      }
-      fields {
-        slug
-      }
+query BlogPostBySlug($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
+    html
+    excerpt
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      date(formatString: "MMMM DD, YYYY")
+      tags
     }
   }
+}
 `;
+
+export const Head = ({ data }) => 
+  <SEO 
+    postPath={data.markdownRemark.fields.slug} 
+    postNode={data.markdownRemark} 
+    postSEO >
+  </SEO>

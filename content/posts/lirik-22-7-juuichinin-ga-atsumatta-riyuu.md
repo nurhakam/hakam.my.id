@@ -10,8 +10,8 @@ tags:
 
 Lirik lagu **Juuichinin ga Atsumatta Riyuu** oleh **22/7** (_Nanabun no Nijyuuni_) terjemahan Bahasa Indonesia. _Juuichinin ga Atsumatta Riyuu_ adalah lagu coupling single pertama Nanabun no Nijyuuni (Boku wa Sonzai Shiteinakatta). Lagu ini merupakan lagu 22/7 pertama yang dinyanyikan oleh kesebelas member. Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
-	<img src="../images/22-7-1st-single-type-a.jpg" alt="22/7 1st Single Limited Edition Type A"/>
+<div class="cdcover">
+ <img src="../images/22-7-1st-single-type-a.jpg" alt="22/7 1st Single Limited Edition Type A"/>
 </div>
 
 - Judul : **11 人が集まった理由** (_Juuichinin ga Atsumatta Riyuu_ / Alasan Sebelas dari Kita Bersama)

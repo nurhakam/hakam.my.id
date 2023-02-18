@@ -10,8 +10,8 @@ tags:
 
 Lirik lagu **Sora no Emerald** oleh **22/7** (_Nanabun no Nijyuuni_) terjemahan Bahasa Indonesia. _Sora no Emerald_ adalah lagu coupling single ke-5 Nanabun no Nijyuuni (Muzui) sekaligus ending theme anime 22/7 yang tayang 11 Januari 2020. Berikut terjemahan lirik dalam **Bahasa Indonesia**, beserta lirik aslinya dalam Kanji maupun Romaji.
 
-<div className="cdcover">
-	<img src="../images/22-7-5th-single-type-a.jpg" alt="22/7 5th Single Limited Edition Type A"/>
+<div class="cdcover">
+ <img src="../images/22-7-5th-single-type-a.jpg" alt="22/7 5th Single Limited Edition Type A"/>
 </div>
 
 - Judul : **空のエメラルド** (_Sora no Emerald_ / Emerald di Langit)

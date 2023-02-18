@@ -1,19 +1,14 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Lists from "../components/Lists";
 import SEO from "../components/SEO";
-import config from "../utils/config";
 
-export default function TagTemplate({ data, pageContext }) {
-  const { tag } = pageContext;
-  const tagPosts = data.allMdx.edges; // from the graphql query below
+export default function TagTemplate({ data }) {
+  const tagPosts = data.allMarkdownRemark.edges; // from the graphql query below
   return (
     <Layout>
       <div className="tag-container">
-        <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
-        <SEO />
         <Lists posts={tagPosts} />
       </div>
     </Layout>
@@ -22,9 +17,9 @@ export default function TagTemplate({ data, pageContext }) {
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
-    allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+    allMarkdownRemark(
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {tags: {in: [$tag]}}}
     ) {
       totalCount
       edges {
@@ -44,3 +39,8 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => 
+  <SEO 
+    customTitle={`Posts tagged as "${pageContext.tag}"`}>
+  </SEO>
