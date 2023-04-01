@@ -99,6 +99,7 @@ export default function SEO ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <title>{title}</title>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7236498391043453" crossorigin="anonymous"></script>
     </>
   );
 }
