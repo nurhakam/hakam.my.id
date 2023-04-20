@@ -12,7 +12,7 @@
     "gatsby-plugin-image": "^3.6.0",
     "gatsby-plugin-manifest": "^5.6.0",
     "gatsby-plugin-offline": "^6.6.0",
-    "gatsby-plugin-sharp": "^5.6.0",
+    "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-plugin-sitemap": "^6.6.0",
     "gatsby-plugin-styled-components": "^6.6.0",
     "gatsby-plugin-zopfli": "^2.0.0",
